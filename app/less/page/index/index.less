@@ -1,0 +1,27 @@
+@import '../../base/mixin.less';
+
+@font-size: 14px;
+
+body {
+    min-height: 100vh;
+    padding: 2em;
+    font-size: @font-size;
+    background: #f7f8f9;
+}
+
+#app {
+    display: flex;
+}
+
+.list-chapter {
+    margin-right: 2*@font-size;
+    width: 240px;
+}
+
+main {
+    .calc(min-height, "100vh - 4em");
+    width: 100%;
+    padding: @font-size;
+    border-radius: 4px;
+    background: #fff;
+}
