@@ -11,34 +11,21 @@ import Triangle001 from '../pages/basic-shapes/triangle/001';
 import Rectangle001 from '../pages/basic-shapes/rectangle/001';
 import Circle001 from '../pages/basic-shapes/circle/001';
 
+import DrawImage from '../pages/draw-image/index';
+import Halloween from '../pages/draw-image/instances/halloween';
+
 export default [
-    {
-        path: '/',
-        redirect: '/index'
-    },{
-        path: '/index',
-        component: Index
-    },
+    { path: '/', redirect: '/index' },
+    { path: '/index', component: Index },
 
-    {
-        path: '/basic-shapes',
-        component: BasicShapes
-    },{
-        path: '/basic-shapes/line/001',
-        component: Line001
-    },{
-        path: '/basic-shapes/triangle/001',
-        component: Triangle001
-    },{
-        path: '/basic-shapes/rectangle/001',
-        component: Rectangle001
-    },{
-        path: '/basic-shapes/circle/001',
-        component: Circle001
-    },
+    { path: '/basic-shapes', component: BasicShapes },
+    { path: '/basic-shapes/line/001', component: Line001 },
+    { path: '/basic-shapes/triangle/001', component: Triangle001 },
+    { path: '/basic-shapes/rectangle/001', component: Rectangle001 },
+    { path: '/basic-shapes/circle/001', component: Circle001 },
 
-    {
-        path: '*',
-        component: NotFound
-    }
+    { path: '/draw-image', component: DrawImage },
+    { path: '/draw-image/instances/halloween', component: Halloween },
+
+    { path: '*', component: NotFound }
 ];

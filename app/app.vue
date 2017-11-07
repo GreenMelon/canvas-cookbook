@@ -23,14 +23,12 @@
     /**
      * 这个文件提供了路由的挂载元素
      */
-    module.exports = {
+    export default {
         data() {
             return {
                 chapters: [
-                    {
-                        name: '基本形状',
-                        route: '/basic-shapes'
-                    }
+                    { route: '/basic-shapes', name: '基本形状' },
+                    { route: '/draw-image', name: '图像的绘制' }
                 ]
             }
         }

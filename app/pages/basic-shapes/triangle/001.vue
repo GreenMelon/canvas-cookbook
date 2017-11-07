@@ -1,6 +1,3 @@
-<style lang="less" scoped>
-</style>
-
 <template>
     <main>
         <canvas id="canvas" width="800" height="600"></canvas>
@@ -8,7 +5,7 @@
 </template>
 
 <script>
-    module.exports = {
+    export default {
         methods: {
             draw() {
                 let canvas = document.getElementById('canvas');
