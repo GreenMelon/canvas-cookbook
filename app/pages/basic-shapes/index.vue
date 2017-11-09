@@ -59,6 +59,14 @@
                                 route: '/basic-shapes/stroke/001'
                             }
                         ]
+                    },{
+                        name: '填充',
+                        instances: [
+                            {
+                                name: '001',
+                                route: '/basic-shapes/fill/001'
+                            }
+                        ]
                     }
                 ]
             }
