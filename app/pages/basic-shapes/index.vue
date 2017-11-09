@@ -39,8 +39,11 @@
                         name: '矩形',
                         instances: [
                             {
-                                name: '基础',
+                                name: '空心矩形',
                                 route: '/basic-shapes/rectangle/001'
+                            },{
+                                name: '实心矩形',
+                                route: '/basic-shapes/rectangle/002'
                             }
                         ]
                     },{
