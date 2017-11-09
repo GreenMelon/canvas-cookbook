@@ -51,6 +51,14 @@
                                 route: '/basic-shapes/circle/001'
                             }
                         ]
+                    },{
+                        name: '笔触',
+                        instances: [
+                            {
+                                name: '001',
+                                route: '/basic-shapes/stroke/001'
+                            }
+                        ]
                     }
                 ]
             }
