@@ -11,11 +11,11 @@
                 let canvas = document.getElementById('canvas');
                 let context = canvas.getContext('2d');
 
-                context.lineWidth = 5;
+                context.fillStyle = '#007dd4';
 
-                // context.strokeRect(x, y, w, h);
+                // context.fillRect(x, y, w, h);
 
-                context.strokeRect(10, 10, 80, 60);
+                context.fillRect(10, 10, 80, 60);
             }
         },
         mounted() {
