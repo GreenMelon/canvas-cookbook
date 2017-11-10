@@ -72,8 +72,11 @@
                         name: '笔触',
                         instances: [
                             {
-                                name: '001',
-                                route: '/basic-shapes/stroke/001'
+                                name: 'line-width',
+                                route: '/basic-shapes/stroke/line-width'
+                            },{
+                                name: 'line-join',
+                                route: '/basic-shapes/stroke/line-join'
                             }
                         ]
                     },{

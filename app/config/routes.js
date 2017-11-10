@@ -14,7 +14,8 @@ import Rectangle003 from '../pages/basic-shapes/rectangle/003';
 import Arc001 from '../pages/basic-shapes/arc/001';
 import ArcTo001 from '../pages/basic-shapes/arcTo/001';
 import Circle001 from '../pages/basic-shapes/circle/001';
-import Stroke from '../pages/basic-shapes/stroke/001';
+import LineWidth from '../pages/basic-shapes/stroke/line-width';
+import LineJoin from '../pages/basic-shapes/stroke/line-join';
 import Fill from '../pages/basic-shapes/fill/001';
 
 import Instances from '../pages/instances/index';
@@ -36,7 +37,8 @@ export default [
     { path: '/basic-shapes/arc/001', component: Arc001 },
     { path: '/basic-shapes/arcTo/001', component: ArcTo001 },
     { path: '/basic-shapes/circle/001', component: Circle001 },
-    { path: '/basic-shapes/stroke/001', component: Stroke },
+    { path: '/basic-shapes/stroke/line-width', component: LineWidth },
+     { path: '/basic-shapes/stroke/line-join', component: LineJoin },
     { path: '/basic-shapes/fill/001', component: Fill },
 
     { path: '/instances', component: Instances },
