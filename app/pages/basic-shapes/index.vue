@@ -44,6 +44,9 @@
                             },{
                                 name: '实心矩形',
                                 route: '/basic-shapes/rectangle/002'
+                            },{
+                                name: '清除矩形',
+                                route: '/basic-shapes/rectangle/003'
                             }
                         ]
                     },{
