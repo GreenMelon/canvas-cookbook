@@ -50,6 +50,14 @@
                             }
                         ]
                     },{
+                        name: '弧线',
+                        instances: [
+                            {
+                                name: '001',
+                                route: '/basic-shapes/arcTo/001'
+                            }
+                        ]
+                    },{
                         name: '圆',
                         instances: [
                             {
