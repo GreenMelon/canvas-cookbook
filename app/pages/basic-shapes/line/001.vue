@@ -11,10 +11,9 @@
                 let canvas = document.getElementById('canvas');
                 let context = canvas.getContext('2d');
 
-                context.moveTo(0, 0);
-                context.lineTo(100, 100);
-                // context.lineWidth = 5;
-                // context.strokeStyle = '#c7254e';
+                context.moveTo(0, 0);      //起点
+                context.lineTo(100, 100);  //终点
+
                 context.stroke();
             }
         },

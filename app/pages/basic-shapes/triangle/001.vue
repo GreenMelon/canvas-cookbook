@@ -17,13 +17,8 @@
                 context.lineTo(300, 100);  // 顶点3
                 context.lineTo(100, 100);  // 顶点1
                 context.closePath();
-                context.lineWidth = 5;
-                // context.strokeStyle = '#c7254e';
-                context.stroke();          // 绘制
 
-                // context.fillStyle = 'rgb(250,250,0)';   // 填充的样式
-                // context.fill();                         // 填充
-
+                context.stroke();
             }
         },
         mounted() {
