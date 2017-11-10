@@ -15,6 +15,9 @@ import Circle001 from '../pages/basic-shapes/circle/001';
 import Stroke from '../pages/basic-shapes/stroke/001';
 import Fill from '../pages/basic-shapes/fill/001';
 
+import Instances from '../pages/instances/index';
+import Tangram from '../pages/instances/tangram';
+
 import DrawImage from '../pages/draw-image/index';
 import Halloween from '../pages/draw-image/instances/halloween';
 
@@ -31,6 +34,9 @@ export default [
     { path: '/basic-shapes/circle/001', component: Circle001 },
     { path: '/basic-shapes/stroke/001', component: Stroke },
     { path: '/basic-shapes/fill/001', component: Fill },
+
+    { path: '/instances', component: Instances },
+    { path: '/instances/tangram', component: Tangram },
 
     { path: '/draw-image', component: DrawImage },
     { path: '/draw-image/instances/halloween', component: Halloween },
