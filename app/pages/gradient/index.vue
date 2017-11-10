@@ -33,6 +33,9 @@
                             {
                                 name: '001',
                                 route: '/gradient/radial/001'
+                            },{
+                                name: '002',
+                                route: '/gradient/radial/002'
                             }
                         ]
                     }
