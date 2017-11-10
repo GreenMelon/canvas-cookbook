@@ -11,16 +11,17 @@
                 let canvas = document.getElementById('canvas');
                 let context = canvas.getContext('2d');
 
-                // context.arc(
-                //     centerX,       // 圆心x坐标
-                //     centerY,       // 圆心y坐标
-                //     radius,        // 半径
-                //     starAngle,     // 开始的角度
-                //     endAngle,      // 结束的角度
-                //     anticlockwise  // 默认为false,顺时针
-                // );
+                // 路径的起始点
+                context.moveTo(50, 50);
+                // 弧线的起始端点
+                context.lineTo(50, 50);
 
-                context.arc(100, 100, 50, 0, 2*Math.PI);
+                // 端点1
+                let pointA = { x: 200, y: 50 };
+                // 端点2
+                let pointB = { x: 200, y: 100 };
+
+                context.arcTo(pointA.x, pointA.y, pointB.x, pointB.y, 50);
 
                 context.lineWidth = 2;
                 context.strokeStyle = '#c7254e';
