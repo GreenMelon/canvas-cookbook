@@ -27,6 +27,14 @@
                                 route: '/gradient/linear/001'
                             }
                         ]
+                    },{
+                        name: '径向渐变',
+                        instances: [
+                            {
+                                name: '001',
+                                route: '/gradient/radial/001'
+                            }
+                        ]
                     }
                 ]
             }
