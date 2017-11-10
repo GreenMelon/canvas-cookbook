@@ -18,11 +18,14 @@ import LineWidth from '../pages/basic-shapes/stroke/line-width';
 import LineJoin from '../pages/basic-shapes/stroke/line-join';
 import Fill from '../pages/basic-shapes/fill/001';
 
-import Instances from '../pages/instances/index';
-import Tangram from '../pages/instances/tangram';
+import Gradient from '../pages/gradient/index';
+import LinearGradient001 from '../pages/gradient/linear/001';
 
 import DrawImage from '../pages/draw-image/index';
 import Halloween from '../pages/draw-image/instances/halloween';
+
+import Instances from '../pages/instances/index';
+import Tangram from '../pages/instances/tangram';
 
 export default [
     { path: '/', redirect: '/index' },
@@ -38,14 +41,17 @@ export default [
     { path: '/basic-shapes/arcTo/001', component: ArcTo001 },
     { path: '/basic-shapes/circle/001', component: Circle001 },
     { path: '/basic-shapes/stroke/line-width', component: LineWidth },
-     { path: '/basic-shapes/stroke/line-join', component: LineJoin },
+    { path: '/basic-shapes/stroke/line-join', component: LineJoin },
     { path: '/basic-shapes/fill/001', component: Fill },
 
-    { path: '/instances', component: Instances },
-    { path: '/instances/tangram', component: Tangram },
+    { path: '/gradient', component: Gradient },
+    { path: '/gradient/linear/001', component: LinearGradient001 },
 
     { path: '/draw-image', component: DrawImage },
     { path: '/draw-image/instances/halloween', component: Halloween },
+
+    { path: '/instances', component: Instances },
+    { path: '/instances/tangram', component: Tangram },
 
     { path: '*', component: NotFound }
 ];

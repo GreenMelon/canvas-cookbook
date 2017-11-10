@@ -29,7 +29,8 @@
                 chapters: [
                     { route: '/basic-shapes', name: '基本形状' },
                     { route: '/draw-image', name: '图像的绘制' },
-                    { route: '/instances', name: '实例' }
+                    { route: '/gradient', name: '渐变' },
+                    { route: '/instances', name: '实例' },
                 ]
             }
         }
