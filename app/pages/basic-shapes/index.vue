@@ -53,7 +53,10 @@
                         name: '弧线',
                         instances: [
                             {
-                                name: '001',
+                                name: 'arc',
+                                route: '/basic-shapes/arc/001'
+                            },{
+                                name: 'arcTo',
                                 route: '/basic-shapes/arcTo/001'
                             }
                         ]

@@ -11,6 +11,7 @@ import Triangle001 from '../pages/basic-shapes/triangle/001';
 import Rectangle001 from '../pages/basic-shapes/rectangle/001';
 import Rectangle002 from '../pages/basic-shapes/rectangle/002';
 import Rectangle003 from '../pages/basic-shapes/rectangle/003';
+import Arc001 from '../pages/basic-shapes/arc/001';
 import ArcTo001 from '../pages/basic-shapes/arcTo/001';
 import Circle001 from '../pages/basic-shapes/circle/001';
 import Stroke from '../pages/basic-shapes/stroke/001';
@@ -32,6 +33,7 @@ export default [
     { path: '/basic-shapes/rectangle/001', component: Rectangle001 },
     { path: '/basic-shapes/rectangle/002', component: Rectangle002 },
     { path: '/basic-shapes/rectangle/003', component: Rectangle003 },
+    { path: '/basic-shapes/arc/001', component: Arc001 },
     { path: '/basic-shapes/arcTo/001', component: ArcTo001 },
     { path: '/basic-shapes/circle/001', component: Circle001 },
     { path: '/basic-shapes/stroke/001', component: Stroke },
