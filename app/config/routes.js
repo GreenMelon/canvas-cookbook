@@ -23,6 +23,9 @@ import LinearGradient001 from '../pages/gradient/linear/001';
 import RadialGradient001 from '../pages/gradient/radial/001';
 import RadialGradient002 from '../pages/gradient/radial/002';
 
+import Pattern from '../pages/pattern/index';
+import Pattern001 from '../pages/pattern/001';
+
 import DrawImage from '../pages/draw-image/index';
 import Halloween from '../pages/draw-image/instances/halloween';
 
@@ -50,6 +53,9 @@ export default [
     { path: '/gradient/linear/001', component: LinearGradient001 },
     { path: '/gradient/radial/001', component: RadialGradient001 },
     { path: '/gradient/radial/002', component: RadialGradient002 },
+
+    { path: '/pattern', component: Pattern },
+    { path: '/pattern/001', component: Pattern001 },
 
     { path: '/draw-image', component: DrawImage },
     { path: '/draw-image/instances/halloween', component: Halloween },
