@@ -27,7 +27,8 @@
         data() {
             return {
                 chapters: [
-                    { route: '/basic-shapes', name: '基本形状' },
+                    { route: '/basic', name: '基础' },
+                    { route: '/shapes', name: '基本形状' },
                     { route: '/gradient', name: '渐变' },
                     { route: '/pattern', name: '图章' },
                     { route: '/draw-image', name: '图像的绘制' },

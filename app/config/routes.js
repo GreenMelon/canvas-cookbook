@@ -5,18 +5,21 @@
 import NotFound from '../pages/index/404';
 import Index from '../pages/index/index';
 
-import BasicShapes from '../pages/basic-shapes/index';
-import Line001 from '../pages/basic-shapes/line/001';
-import Triangle001 from '../pages/basic-shapes/triangle/001';
-import Rectangle001 from '../pages/basic-shapes/rectangle/001';
-import Rectangle002 from '../pages/basic-shapes/rectangle/002';
-import Rectangle003 from '../pages/basic-shapes/rectangle/003';
-import Arc001 from '../pages/basic-shapes/arc/001';
-import ArcTo001 from '../pages/basic-shapes/arcTo/001';
-import Circle001 from '../pages/basic-shapes/circle/001';
-import LineWidth from '../pages/basic-shapes/stroke/line-width';
-import LineJoin from '../pages/basic-shapes/stroke/line-join';
-import Fill from '../pages/basic-shapes/fill/001';
+import Basic from '../pages/basic/index';
+import Restore001 from '../pages/basic/restore/001';
+
+import BasicShapes from '../pages/shapes/index';
+import Line001 from '../pages/shapes/line/001';
+import Triangle001 from '../pages/shapes/triangle/001';
+import Rectangle001 from '../pages/shapes/rectangle/001';
+import Rectangle002 from '../pages/shapes/rectangle/002';
+import Rectangle003 from '../pages/shapes/rectangle/003';
+import Arc001 from '../pages/shapes/arc/001';
+import ArcTo001 from '../pages/shapes/arcTo/001';
+import Circle001 from '../pages/shapes/circle/001';
+import LineWidth from '../pages/shapes/stroke/line-width';
+import LineJoin from '../pages/shapes/stroke/line-join';
+import Fill from '../pages/shapes/fill/001';
 
 import Gradient from '../pages/gradient/index';
 import LinearGradient001 from '../pages/gradient/linear/001';
@@ -36,18 +39,21 @@ export default [
     { path: '/', redirect: '/index' },
     { path: '/index', component: Index },
 
-    { path: '/basic-shapes', component: BasicShapes },
-    { path: '/basic-shapes/line/001', component: Line001 },
-    { path: '/basic-shapes/triangle/001', component: Triangle001 },
-    { path: '/basic-shapes/rectangle/001', component: Rectangle001 },
-    { path: '/basic-shapes/rectangle/002', component: Rectangle002 },
-    { path: '/basic-shapes/rectangle/003', component: Rectangle003 },
-    { path: '/basic-shapes/arc/001', component: Arc001 },
-    { path: '/basic-shapes/arcTo/001', component: ArcTo001 },
-    { path: '/basic-shapes/circle/001', component: Circle001 },
-    { path: '/basic-shapes/stroke/line-width', component: LineWidth },
-    { path: '/basic-shapes/stroke/line-join', component: LineJoin },
-    { path: '/basic-shapes/fill/001', component: Fill },
+    { path: '/basic', component: Basic },
+    { path: '/basic/restore/001', component: Restore001 },
+
+    { path: '/shapes', component: BasicShapes },
+    { path: '/shapes/line/001', component: Line001 },
+    { path: '/shapes/triangle/001', component: Triangle001 },
+    { path: '/shapes/rectangle/001', component: Rectangle001 },
+    { path: '/shapes/rectangle/002', component: Rectangle002 },
+    { path: '/shapes/rectangle/003', component: Rectangle003 },
+    { path: '/shapes/arc/001', component: Arc001 },
+    { path: '/shapes/arcTo/001', component: ArcTo001 },
+    { path: '/shapes/circle/001', component: Circle001 },
+    { path: '/shapes/stroke/line-width', component: LineWidth },
+    { path: '/shapes/stroke/line-join', component: LineJoin },
+    { path: '/shapes/fill/001', component: Fill },
 
     { path: '/gradient', component: Gradient },
     { path: '/gradient/linear/001', component: LinearGradient001 },
