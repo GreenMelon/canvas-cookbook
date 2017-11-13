@@ -27,6 +27,14 @@
                                 route: '/draw-image/instances/halloween'
                             }
                         ]
+                    },{
+                        name: 'toDataURL',
+                        instances: [
+                            {
+                                name: '001',
+                                route: '/draw-image/to-data-url'
+                            }
+                        ]
                     }
                 ]
             }

@@ -31,6 +31,7 @@ import Pattern001 from '../pages/pattern/001';
 
 import DrawImage from '../pages/draw-image/index';
 import Halloween from '../pages/draw-image/instances/halloween';
+import ToDataURL from '../pages/draw-image/to-data-url';
 
 import Instances from '../pages/instances/index';
 import Tangram from '../pages/instances/tangram';
@@ -65,6 +66,7 @@ export default [
 
     { path: '/draw-image', component: DrawImage },
     { path: '/draw-image/instances/halloween', component: Halloween },
+    { path: '/draw-image/to-data-url', component: ToDataURL },
 
     { path: '/instances', component: Instances },
     { path: '/instances/tangram', component: Tangram },
