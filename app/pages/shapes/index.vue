@@ -24,7 +24,7 @@
                         instances: [
                             {
                                 name: '基础',
-                                route: '/basic-shapes/line/001'
+                                route: '/shapes/line/001'
                             }
                         ]
                     },{
@@ -32,7 +32,7 @@
                         instances: [
                             {
                                 name: '基础',
-                                route: '/basic-shapes/triangle/001'
+                                route: '/shapes/triangle/001'
                             }
                         ]
                     },{
@@ -40,13 +40,13 @@
                         instances: [
                             {
                                 name: '空心矩形',
-                                route: '/basic-shapes/rectangle/001'
+                                route: '/shapes/rectangle/001'
                             },{
                                 name: '实心矩形',
-                                route: '/basic-shapes/rectangle/002'
+                                route: '/shapes/rectangle/002'
                             },{
                                 name: '清除矩形',
-                                route: '/basic-shapes/rectangle/003'
+                                route: '/shapes/rectangle/003'
                             }
                         ]
                     },{
@@ -54,10 +54,10 @@
                         instances: [
                             {
                                 name: 'arc',
-                                route: '/basic-shapes/arc/001'
+                                route: '/shapes/arc/001'
                             },{
                                 name: 'arcTo',
-                                route: '/basic-shapes/arcTo/001'
+                                route: '/shapes/arcTo/001'
                             }
                         ]
                     },{
@@ -65,7 +65,7 @@
                         instances: [
                             {
                                 name: '基础',
-                                route: '/basic-shapes/circle/001'
+                                route: '/shapes/circle/001'
                             }
                         ]
                     },{
@@ -73,10 +73,10 @@
                         instances: [
                             {
                                 name: 'line-width',
-                                route: '/basic-shapes/stroke/line-width'
+                                route: '/shapes/stroke/line-width'
                             },{
                                 name: 'line-join',
-                                route: '/basic-shapes/stroke/line-join'
+                                route: '/shapes/stroke/line-join'
                             }
                         ]
                     },{
@@ -84,7 +84,7 @@
                         instances: [
                             {
                                 name: '001',
-                                route: '/basic-shapes/fill/001'
+                                route: '/shapes/fill/001'
                             }
                         ]
                     }
