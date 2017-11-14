@@ -85,6 +85,9 @@
                             {
                                 name: '001',
                                 route: '/shapes/fill/001'
+                            },{
+                                name: '文本填充',
+                                route: '/shapes/fill/fill-text'
                             }
                         ]
                     }

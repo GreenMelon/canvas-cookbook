@@ -20,6 +20,7 @@ import Circle001 from '../pages/shapes/circle/001';
 import LineWidth from '../pages/shapes/stroke/line-width';
 import LineJoin from '../pages/shapes/stroke/line-join';
 import Fill from '../pages/shapes/fill/001';
+import FillText from '../pages/shapes/fill/fill-text';
 
 import Gradient from '../pages/gradient/index';
 import LinearGradient001 from '../pages/gradient/linear/001';
@@ -55,6 +56,7 @@ export default [
     { path: '/shapes/stroke/line-width', component: LineWidth },
     { path: '/shapes/stroke/line-join', component: LineJoin },
     { path: '/shapes/fill/001', component: Fill },
+    { path: '/shapes/fill/fill-text', component: FillText },
 
     { path: '/gradient', component: Gradient },
     { path: '/gradient/linear/001', component: LinearGradient001 },
