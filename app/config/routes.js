@@ -17,6 +17,7 @@ import Rectangle003 from '../pages/shapes/rectangle/003';
 import Arc001 from '../pages/shapes/arc/001';
 import ArcTo001 from '../pages/shapes/arcTo/001';
 import Circle001 from '../pages/shapes/circle/001';
+import Circle002 from '../pages/shapes/circle/002';
 import LineWidth from '../pages/shapes/stroke/line-width';
 import LineJoin from '../pages/shapes/stroke/line-join';
 import Fill from '../pages/shapes/fill/001';
@@ -54,6 +55,7 @@ export default [
     { path: '/shapes/arc/001', component: Arc001 },
     { path: '/shapes/arcTo/001', component: ArcTo001 },
     { path: '/shapes/circle/001', component: Circle001 },
+    { path: '/shapes/circle/002', component: Circle002 },
     { path: '/shapes/stroke/line-width', component: LineWidth },
     { path: '/shapes/stroke/line-join', component: LineJoin },
     { path: '/shapes/fill/001', component: Fill },

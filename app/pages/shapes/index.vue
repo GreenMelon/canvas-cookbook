@@ -66,6 +66,9 @@
                             {
                                 name: '基础',
                                 route: '/shapes/circle/001'
+                            },{
+                                name: '标靶',
+                                route: '/shapes/circle/002'
                             }
                         ]
                     },{
