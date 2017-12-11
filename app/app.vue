@@ -23,6 +23,9 @@
     /**
      * 这个文件提供了路由的挂载元素
      */
+
+    import './components/categories';
+
     export default {
         data() {
             return {
