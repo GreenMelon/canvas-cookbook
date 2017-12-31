@@ -20,6 +20,7 @@ import Circle001 from '../pages/shapes/circle/001';
 import Circle002 from '../pages/shapes/circle/002';
 import LineWidth from '../pages/shapes/stroke/line-width';
 import LineJoin from '../pages/shapes/stroke/line-join';
+import LineCap from '../pages/shapes/stroke/line-cap';
 import Fill from '../pages/shapes/fill/001';
 import FillText from '../pages/shapes/fill/fill-text';
 
@@ -58,6 +59,7 @@ export default [
     { path: '/shapes/circle/002', component: Circle002 },
     { path: '/shapes/stroke/line-width', component: LineWidth },
     { path: '/shapes/stroke/line-join', component: LineJoin },
+    { path: '/shapes/stroke/line-cap', component: LineCap },
     { path: '/shapes/fill/001', component: Fill },
     { path: '/shapes/fill/fill-text', component: FillText },
 

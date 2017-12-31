@@ -70,6 +70,9 @@
                             },{
                                 name: 'line-join',
                                 route: '/shapes/stroke/line-join'
+                            },{
+                                name: 'line-cap',
+                                route: '/shapes/stroke/line-cap'
                             }
                         ]
                     },{
