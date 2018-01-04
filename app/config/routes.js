@@ -43,6 +43,7 @@ import FillText01 from 'pages/text/fill-text/01';
 import MeasureText01 from 'pages/text/measure-text/01';
 import MeasureText02 from 'pages/text/measure-text/02';
 import TextAlign01 from 'pages/text/text-align/01';
+import TextBaseLine01 from 'pages/text/text-base-line/01';
 
 import DrawImage from 'pages/draw-image/index';
 import Halloween from 'pages/draw-image/instances/halloween';
@@ -95,6 +96,7 @@ export default [
     { path: '/text/measure-text/01', component: MeasureText01 },
     { path: '/text/measure-text/02', component: MeasureText02 },
     { path: '/text/text-align/01', component: TextAlign01 },
+    { path: '/text/text-base-line/01', component: TextBaseLine01 },
 
     { path: '/draw-image', component: DrawImage },
     { path: '/draw-image/instances/halloween', component: Halloween },
