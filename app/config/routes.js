@@ -21,6 +21,7 @@ import Circle02 from 'pages/shapes/circle/02';
 import Arc01 from 'pages/shapes/arc/01';
 import ArcTo01 from 'pages/shapes/arcTo/01';
 import QuadraticCurveTo01 from 'pages/shapes/quadratic-curve-to/01';
+import BezierCurveTo01 from 'pages/shapes/bezier-curve-to/01';
 import LineWidth from 'pages/shapes/stroke/line-width';
 import LineJoin from 'pages/shapes/stroke/line-join';
 import LineCap from 'pages/shapes/stroke/line-cap';
@@ -64,6 +65,7 @@ export default [
     { path: '/shapes/arc/01', component: Arc01 },
     { path: '/shapes/arcTo/01', component: ArcTo01 },
     { path: '/shapes/quadratic-curve-to/01', component: QuadraticCurveTo01 },
+    { path: '/shapes/bezier-curve-to/01', component: BezierCurveTo01 },
     { path: '/shapes/stroke/line-width', component: LineWidth },
     { path: '/shapes/stroke/line-join', component: LineJoin },
     { path: '/shapes/stroke/line-cap', component: LineCap },

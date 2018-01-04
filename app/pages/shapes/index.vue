@@ -81,6 +81,14 @@
                             }
                         ]
                     },{
+                        name: '三次贝塞尔曲线',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/shapes/bezier-curve-to/01'
+                            }
+                        ]
+                    },{
                         name: '笔触',
                         instances: [
                             {
