@@ -16,10 +16,11 @@ import Rectangle02 from 'pages/shapes/rectangle/02';
 import Rectangle03 from 'pages/shapes/rectangle/03';
 import Rectangle04 from 'pages/shapes/rectangle/04';
 import Polygon01 from 'pages/shapes/polygon/01';
-import Arc01 from 'pages/shapes/arc/01';
-import ArcTo01 from 'pages/shapes/arcTo/01';
 import Circle01 from 'pages/shapes/circle/01';
 import Circle02 from 'pages/shapes/circle/02';
+import Arc01 from 'pages/shapes/arc/01';
+import ArcTo01 from 'pages/shapes/arcTo/01';
+import QuadraticCurveTo01 from 'pages/shapes/quadratic-curve-to/01';
 import LineWidth from 'pages/shapes/stroke/line-width';
 import LineJoin from 'pages/shapes/stroke/line-join';
 import LineCap from 'pages/shapes/stroke/line-cap';
@@ -44,7 +45,7 @@ import Tangram from 'pages/instances/tangram';
 import Palette from 'pages/instances/palette';
 
 export default [
-    { path: '/', redirect: '/index' },
+    { path: '/', redirect: '/shapes/fill/fill-text' },
     { path: '/index', component: Index },
 
     { path: '/basic', component: Basic },
@@ -58,10 +59,11 @@ export default [
     { path: '/shapes/rectangle/03', component: Rectangle03 },
     { path: '/shapes/rectangle/04', component: Rectangle04 },
     { path: '/shapes/polygon/01', component: Polygon01 },
-    { path: '/shapes/arc/01', component: Arc01 },
-    { path: '/shapes/arcTo/01', component: ArcTo01 },
     { path: '/shapes/circle/01', component: Circle01 },
     { path: '/shapes/circle/02', component: Circle02 },
+    { path: '/shapes/arc/01', component: Arc01 },
+    { path: '/shapes/arcTo/01', component: ArcTo01 },
+    { path: '/shapes/quadratic-curve-to/01', component: QuadraticCurveTo01 },
     { path: '/shapes/stroke/line-width', component: LineWidth },
     { path: '/shapes/stroke/line-join', component: LineJoin },
     { path: '/shapes/stroke/line-cap', component: LineCap },
