@@ -11,11 +11,11 @@
                 const canvas = document.getElementById('canvas');
                 const context = canvas.getContext('2d');
 
-                context.fillStyle = '#007dd4';
-
-                // context.fillRect(x, y, w, h);
-
+                // 绘制实心矩形
                 context.fillRect(10, 10, 80, 60);
+
+                // 清除矩形
+                context.clearRect(10, 10+5, 80, 60-10);
             }
         },
         mounted() {

@@ -30,13 +30,13 @@
                         instances: [
                             {
                                 name: '空心矩形',
-                                route: '/shapes/rectangle/02'
+                                route: '/shapes/rectangle/01'
                             },{
                                 name: '实心矩形',
-                                route: '/shapes/rectangle/03'
+                                route: '/shapes/rectangle/02'
                             },{
                                 name: '清除矩形',
-                                route: '/shapes/rectangle/04'
+                                route: '/shapes/rectangle/03'
                             }
                         ]
                     },{
