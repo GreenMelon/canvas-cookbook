@@ -28,7 +28,6 @@ import LineJoin02 from 'pages/shapes/stroke/line-join-02';
 import LineCap from 'pages/shapes/stroke/line-cap';
 import SetLineDash from 'pages/shapes/stroke/set-line-dash';
 import Fill from 'pages/shapes/fill/01';
-import FillText from 'pages/shapes/fill/fill-text';
 
 import Gradient from 'pages/gradient/index';
 import LinearGradient01 from 'pages/gradient/linear/01';
@@ -37,6 +36,10 @@ import RadialGradient02 from 'pages/gradient/radial/02';
 
 import Pattern from 'pages/pattern/index';
 import Pattern01 from 'pages/pattern/01';
+
+import Text from 'pages/text/index';
+import StrokeText01 from 'pages/text/stroke-text/01';
+import FillText01 from 'pages/text/fill-text/01';
 
 import DrawImage from 'pages/draw-image/index';
 import Halloween from 'pages/draw-image/instances/halloween';
@@ -48,7 +51,7 @@ import Tangram from 'pages/instances/tangram';
 import Palette from 'pages/instances/palette';
 
 export default [
-    { path: '/', redirect: '/shapes/fill/fill-text' },
+    { path: '/', redirect: '/text/fill-text/01' },
     { path: '/index', component: Index },
 
     { path: '/basic', component: Basic },
@@ -74,7 +77,6 @@ export default [
     { path: '/shapes/stroke/line-cap', component: LineCap },
     { path: '/shapes/stroke/set-line-dash', component: SetLineDash },
     { path: '/shapes/fill/01', component: Fill },
-    { path: '/shapes/fill/fill-text', component: FillText },
 
     { path: '/gradient', component: Gradient },
     { path: '/gradient/linear/01', component: LinearGradient01 },
@@ -83,6 +85,10 @@ export default [
 
     { path: '/pattern', component: Pattern },
     { path: '/pattern/01', component: Pattern01 },
+
+    { path: '/text', component: Text },
+    { path: '/text/stroke-text/01', component: StrokeText01 },
+    { path: '/text/fill-text/01', component: FillText01 },
 
     { path: '/draw-image', component: DrawImage },
     { path: '/draw-image/instances/halloween', component: Halloween },
