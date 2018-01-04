@@ -8,8 +8,8 @@
     export default {
         methods: {
             draw() {
-                let canvas = document.getElementById('canvas');
-                let context = canvas.getContext('2d');
+                const canvas = document.getElementById('canvas');
+                const context = canvas.getContext('2d');
 
                 context.moveTo(100, 100);
                 context.lineTo(300, 300);

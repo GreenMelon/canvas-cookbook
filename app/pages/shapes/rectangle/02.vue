@@ -8,10 +8,11 @@
     export default {
         methods: {
             draw() {
-                let canvas = document.getElementById('canvas');
-                let context = canvas.getContext('2d');
+                const canvas = document.getElementById('canvas');
+                const context = canvas.getContext('2d');
 
                 context.lineWidth = 5;
+                context.strokeStyle = '#007dd4';
 
                 // context.strokeRect(x, y, w, h);
 

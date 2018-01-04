@@ -8,8 +8,8 @@
     export default {
         methods: {
             draw() {
-                let canvas = document.getElementById('canvas');
-                let context = canvas.getContext('2d');
+                const canvas = document.getElementById('canvas');
+                const context = canvas.getContext('2d');
 
                 // 路径的起始点
                 context.moveTo(50, 50);
