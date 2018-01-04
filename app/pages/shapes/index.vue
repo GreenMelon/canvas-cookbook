@@ -37,6 +37,9 @@
                             },{
                                 name: '清除矩形',
                                 route: '/shapes/rectangle/03'
+                            },{
+                                name: '圆角矩形',
+                                route: '/shapes/rectangle/04'
                             }
                         ]
                     },{
