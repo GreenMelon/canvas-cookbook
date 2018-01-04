@@ -21,7 +21,8 @@
                     { route: '/shapes', name: '基本形状' },
                     { route: '/gradient', name: '渐变' },
                     { route: '/pattern', name: '图章' },
-                    { route: '/draw-image', name: '图像的绘制' },
+                    { route: '/text', name: '文本' },
+                    { route: '/draw-image', name: '图像' },
                     { route: '/instances', name: '实例' },
                 ]
             }
