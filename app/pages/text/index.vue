@@ -44,6 +44,14 @@
                                 route: '/text/text-align/01'
                             }
                         ],
+                    },{
+                        name: '垂直对齐',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/text/text-base-line/01'
+                            }
+                        ],
                     }
                 ],
             }
