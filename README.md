@@ -1,39 +1,45 @@
-# Install
-> npm install --save vue vue-router
+# Install 安装与启动
 
-技术栈:
-- vue@2
-- vue-router@2
+## Clone 克隆仓库
+> git clone git@github.com:GreenMelon/canvas-cookbook.git
 
-# Install devDependencies 安装依赖
-> npm install --save-dev webpack ...
+## Node Modules 安装依赖
+> npm install
 
-依赖:
-- webpack@1 (打包构建工具)
-- webpack-dev-server
-- path ?
+## Run 启动
+> npm run dev
 
-- babel
-- babel-core
-- babel-loader
-- babel-plugin-transform-runtime
-- babel-preset-es2015
-- babel-preset-react
-- babel-runtime
+> open localhost:8383 in browser 本地打开 localhost:8383
 
-- vue-loader
-- babel-loader
-- html-loader
-- style-loader
-- less-loader
-- css-loader
-- postcss-loader
-- url-loader
+# Directory 项目结构
 
-- html-webpack-plugin
-- extract-text-webpack-plugin
-- file-loader
-- vue-template-compiler
+```
+├── app
+│   ├── assets                    # 图标资源
+│   ├── components                # 组件
+│   ├── config                    # 配置信息
+│       └── routes.js             # 路由地址
+│
+│   ├── data                      # 静态数据文件
+│   ├── images                    # 图片资源
+│   ├── less                      # 样式表
+│   ├── pages                     # 所有页面模块
+│       ├── shapes
+│       └── ...
+│
+│   ├── utils                     # 工具函数
+│   ├── ...
+│   ├── app.vue                   # 路由挂载元素
+│   └── main.js                   # 主入口
+│
+├── node_modules                  # 依赖包
+│
+├── webpack.base.config.js        # webpack基础配置
+└── webpack.dev.config.js         # webpack开发环境配置
+```
 
-# 待处理
-- <meta>
+# 技术栈
+- vue
+- vue-router
+- canvas
+
