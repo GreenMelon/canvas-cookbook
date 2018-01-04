@@ -21,9 +21,9 @@
 
                 joinStyles.forEach((style, index) => {
                     context.lineJoin = style;
-                    context.strokeRect(20+index*150, 20, 100, 100);
+                    context.strokeRect(20 + index * 150, 20, 100, 100);
                 });
-            }
+            },
         },
         mounted() {
             this.draw();
