@@ -14,6 +14,7 @@ import Triangle01 from 'pages/shapes/triangle/01';
 import Rectangle01 from 'pages/shapes/rectangle/01';
 import Rectangle02 from 'pages/shapes/rectangle/02';
 import Rectangle03 from 'pages/shapes/rectangle/03';
+import Polygon01 from 'pages/shapes/polygon/01';
 import Arc01 from 'pages/shapes/arc/01';
 import ArcTo01 from 'pages/shapes/arcTo/01';
 import Circle01 from 'pages/shapes/circle/01';
@@ -53,6 +54,7 @@ export default [
     { path: '/shapes/rectangle/01', component: Rectangle01 },
     { path: '/shapes/rectangle/02', component: Rectangle02 },
     { path: '/shapes/rectangle/03', component: Rectangle03 },
+    { path: '/shapes/polygon/01', component: Polygon01 },
     { path: '/shapes/arc/01', component: Arc01 },
     { path: '/shapes/arcTo/01', component: ArcTo01 },
     { path: '/shapes/circle/01', component: Circle01 },

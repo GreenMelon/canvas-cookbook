@@ -40,6 +40,14 @@
                             }
                         ]
                     },{
+                        name: '多边形',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/shapes/polygon/01'
+                            }
+                        ]
+                    },{
                         name: '弧线',
                         instances: [
                             {
