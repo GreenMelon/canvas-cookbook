@@ -36,6 +36,14 @@
                                 route: '/text/measure-text/02'
                             }
                         ],
+                    },{
+                        name: '水平对齐',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/text/text-align/01'
+                            }
+                        ],
                     }
                 ],
             }
