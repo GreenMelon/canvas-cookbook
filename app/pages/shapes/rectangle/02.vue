@@ -11,16 +11,20 @@
                 const canvas = document.getElementById('canvas');
                 const context = canvas.getContext('2d');
 
-                context.lineWidth = 5;
-                context.strokeStyle = '#007dd4';
+                context.fillStyle = '#007dd4';
 
-                // context.strokeRect(x, y, w, h);
+                // 方法一
+                // context.fillRect(x, y, w, h);
+                context.fillRect(10, 10, 80, 60);
 
-                context.strokeRect(10, 10, 80, 60);
-            }
+                // 方法二
+                // context.rect(x, y, w, h);
+                context.rect(100, 10, 80, 60);
+                context.fill();
+            },
         },
         mounted() {
             this.draw();
-        }
+        },
     }
 </script>
