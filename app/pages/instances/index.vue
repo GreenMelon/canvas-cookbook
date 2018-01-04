@@ -17,6 +17,14 @@
                                 route: '/instances/tangram'
                             }
                         ]
+                    },{
+                        name: '调色板',
+                        instances: [
+                            {
+                                name: '调色板',
+                                route: '/instances/palette'
+                            }
+                        ]
                     }
                 ]
             }

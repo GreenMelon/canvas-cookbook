@@ -40,6 +40,7 @@ import ToDataURL from 'pages/draw-image/to-data-url';
 
 import Instances from 'pages/instances/index';
 import Tangram from 'pages/instances/tangram';
+import Palette from 'pages/instances/palette';
 
 export default [
     { path: '/', redirect: '/index' },
@@ -80,6 +81,7 @@ export default [
 
     { path: '/instances', component: Instances },
     { path: '/instances/tangram', component: Tangram },
+    { path: '/instances/palette', component: Palette },
 
     { path: '*', component: NotFound }
 ];
