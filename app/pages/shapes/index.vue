@@ -73,6 +73,14 @@
                             }
                         ]
                     },{
+                        name: '二次贝塞尔曲线',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/shapes/quadratic-curve-to/01'
+                            }
+                        ]
+                    },{
                         name: '笔触',
                         instances: [
                             {

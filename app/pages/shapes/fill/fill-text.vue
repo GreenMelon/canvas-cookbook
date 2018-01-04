@@ -15,8 +15,8 @@
                 context.font = '100px sans-serif';
 
                 context.fillStyle = '#c7254e';
-                context.fillText('Cavas', 150, 150);
-            }
+                context.fillText('Canvas', 150, 150);
+            },
         },
         mounted() {
             this.draw();
