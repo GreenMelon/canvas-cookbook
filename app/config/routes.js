@@ -26,6 +26,7 @@ import LineWidth from 'pages/shapes/stroke/line-width';
 import LineJoin from 'pages/shapes/stroke/line-join';
 import LineJoin02 from 'pages/shapes/stroke/line-join-02';
 import LineCap from 'pages/shapes/stroke/line-cap';
+import SetLineDash from 'pages/shapes/stroke/set-line-dash';
 import Fill from 'pages/shapes/fill/01';
 import FillText from 'pages/shapes/fill/fill-text';
 
@@ -71,6 +72,7 @@ export default [
     { path: '/shapes/stroke/line-join', component: LineJoin },
     { path: '/shapes/stroke/line-join-02', component: LineJoin02 },
     { path: '/shapes/stroke/line-cap', component: LineCap },
+    { path: '/shapes/stroke/set-line-dash', component: SetLineDash },
     { path: '/shapes/fill/01', component: Fill },
     { path: '/shapes/fill/fill-text', component: FillText },
 

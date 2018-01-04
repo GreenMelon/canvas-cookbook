@@ -103,7 +103,10 @@
                             },{
                                 name: 'Z',
                                 route: '/shapes/stroke/line-join-02'
-                            }
+                            },{
+                                name: '线条虚实',
+                                route: '/shapes/stroke/set-line-dash'
+                            },
                         ]
                     },{
                         name: '填充',
