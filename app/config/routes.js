@@ -40,6 +40,8 @@ import Pattern01 from 'pages/pattern/01';
 import Text from 'pages/text/index';
 import StrokeText01 from 'pages/text/stroke-text/01';
 import FillText01 from 'pages/text/fill-text/01';
+import MeasureText01 from 'pages/text/measure-text/01';
+import MeasureText02 from 'pages/text/measure-text/02';
 
 import DrawImage from 'pages/draw-image/index';
 import Halloween from 'pages/draw-image/instances/halloween';
@@ -89,6 +91,8 @@ export default [
     { path: '/text', component: Text },
     { path: '/text/stroke-text/01', component: StrokeText01 },
     { path: '/text/fill-text/01', component: FillText01 },
+    { path: '/text/measure-text/01', component: MeasureText01 },
+    { path: '/text/measure-text/02', component: MeasureText02 },
 
     { path: '/draw-image', component: DrawImage },
     { path: '/draw-image/instances/halloween', component: Halloween },

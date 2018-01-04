@@ -25,6 +25,17 @@
                                 route: '/text/fill-text/01'
                             }
                         ],
+                    },{
+                        name: '获取文本宽度',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/text/measure-text/01'
+                            },{
+                                name: '水平居中',
+                                route: '/text/measure-text/02'
+                            }
+                        ],
                     }
                 ],
             }
