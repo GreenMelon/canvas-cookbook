@@ -100,6 +100,9 @@
                             },{
                                 name: 'line-cap',
                                 route: '/shapes/stroke/line-cap'
+                            },{
+                                name: 'Z',
+                                route: '/shapes/stroke/line-join-02'
                             }
                         ]
                     },{
