@@ -19,7 +19,7 @@
         },
         methods: {
             draw() {
-                let canvas = document.getElementById('canvas');
+                const canvas = document.getElementById('canvas');
                 let ctx = canvas.getContext('2d');
 
                 let { centerX, centerY, radius, pieces, step } = {

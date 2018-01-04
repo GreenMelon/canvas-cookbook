@@ -13,19 +13,19 @@
                         name: '线性渐变',
                         instances: [
                             {
-                                name: '001',
-                                route: '/gradient/linear/001'
+                                name: '01',
+                                route: '/gradient/linear/01'
                             }
                         ]
                     },{
                         name: '径向渐变',
                         instances: [
                             {
-                                name: '001',
-                                route: '/gradient/radial/001'
+                                name: '01',
+                                route: '/gradient/radial/01'
                             },{
-                                name: '002',
-                                route: '/gradient/radial/002'
+                                name: '02',
+                                route: '/gradient/radial/02'
                             }
                         ]
                     }

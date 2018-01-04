@@ -15,7 +15,7 @@
                 canvas: null,
                 context: null,
                 index: 0,
-                colors: ['red', 'green', 'blue']
+                colors: ['red', 'green', 'blue'],
             }
         },
         methods: {
@@ -37,10 +37,10 @@
             restore() {
                 this.context.restore();
                 this.draw(Math.max(0, this.index-1));
-            }
+            },
         },
         mounted() {
             this.init();
-        }
+        },
     };
 </script>

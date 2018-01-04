@@ -12,7 +12,7 @@
             return {
                 canvas: null,
                 context: null,
-                images: []
+                images: [],
             }
         },
         methods: {
@@ -32,10 +32,10 @@
             exportImg() {
                 let url = this.canvas.toDataURL('image/png');
                 this.images.push(url);
-            }
+            },
         },
         mounted() {
             this.draw();
-        }
+        },
     };
 </script>

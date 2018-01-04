@@ -27,10 +27,10 @@
                 this.canvas.height = img.height;
                 this.canvas.width = img.width;
                 this.context.drawImage(img, 0, 0);
-            }
+            },
         },
         mounted() {
             this.init('http://ox2ualtw3.bkt.clouddn.com/halloween.png');
-        }
+        },
     };
 </script>

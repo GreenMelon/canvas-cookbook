@@ -13,7 +13,7 @@
                 src: 'http://www.caiguazai.com/796795205.mp4',
                 canvas: null,
                 context: null,
-                video: null
+                video: null,
             }
         },
         methods: {
@@ -26,10 +26,10 @@
             draw() {
                 const video = this.video;
                 this.context.drawImage(video, 0, 0, video.clientWidth, video.clientHeight);
-            }
+            },
         },
         mounted() {
             this.init();
-        }
+        },
     };
 </script>

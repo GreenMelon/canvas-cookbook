@@ -13,8 +13,8 @@
                         name: '图章',
                         instances: [
                             {
-                                name: '001',
-                                route: '/pattern/001'
+                                name: '01',
+                                route: '/pattern/01'
                             }
                         ]
                     }

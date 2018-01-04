@@ -14,7 +14,7 @@
                         instances: [
                             {
                                 name: '基础',
-                                route: '/shapes/line/001'
+                                route: '/shapes/line/01'
                             }
                         ]
                     },{
@@ -22,7 +22,7 @@
                         instances: [
                             {
                                 name: '基础',
-                                route: '/shapes/triangle/001'
+                                route: '/shapes/triangle/01'
                             }
                         ]
                     },{
@@ -30,13 +30,13 @@
                         instances: [
                             {
                                 name: '空心矩形',
-                                route: '/shapes/rectangle/001'
+                                route: '/shapes/rectangle/02'
                             },{
                                 name: '实心矩形',
-                                route: '/shapes/rectangle/002'
+                                route: '/shapes/rectangle/03'
                             },{
                                 name: '清除矩形',
-                                route: '/shapes/rectangle/003'
+                                route: '/shapes/rectangle/04'
                             }
                         ]
                     },{
@@ -44,10 +44,10 @@
                         instances: [
                             {
                                 name: 'arc',
-                                route: '/shapes/arc/001'
+                                route: '/shapes/arc/01'
                             },{
                                 name: 'arcTo',
-                                route: '/shapes/arcTo/001'
+                                route: '/shapes/arcTo/01'
                             }
                         ]
                     },{
@@ -55,10 +55,10 @@
                         instances: [
                             {
                                 name: '基础',
-                                route: '/shapes/circle/001'
+                                route: '/shapes/circle/01'
                             },{
                                 name: '标靶',
-                                route: '/shapes/circle/002'
+                                route: '/shapes/circle/02'
                             }
                         ]
                     },{
@@ -79,15 +79,15 @@
                         name: '填充',
                         instances: [
                             {
-                                name: '001',
-                                route: '/shapes/fill/001'
+                                name: '01',
+                                route: '/shapes/fill/01'
                             },{
                                 name: '文本填充',
                                 route: '/shapes/fill/fill-text'
                             }
                         ]
                     }
-                ]
+                ],
             }
         }
     }
