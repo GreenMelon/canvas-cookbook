@@ -46,7 +46,8 @@ import TextAlign01 from 'pages/text/text-align/01';
 import TextBaseLine01 from 'pages/text/text-base-line/01';
 
 import Image from 'pages/image/index';
-import DrawImage from 'pages/image/draw/img';
+import DrawImage01 from 'pages/image/draw/01';
+import DrawImage02 from 'pages/image/draw/02';
 import Halloween from 'pages/image/draw/halloween';
 import Screenshot from 'pages/image/draw/screenshot';
 import ToDataURL from 'pages/image/export/to-data-url';
@@ -100,7 +101,8 @@ export default [
     { path: '/text/text-base-line/01', component: TextBaseLine01 },
 
     { path: '/image', component: Image },
-    { path: '/image/draw/img', component: DrawImage },
+    { path: '/image/draw/01', component: DrawImage01 },
+    { path: '/image/draw/02', component: DrawImage02 },
     { path: '/image/draw/halloween', component: Halloween },
     { path: '/image/draw/screenshot', component: Screenshot },
     { path: '/image/export/to-data-url', component: ToDataURL },
