@@ -14,7 +14,10 @@
                         instances: [
                             {
                                 name: '绘制页面上的图片',
-                                route: '/image/draw/img'
+                                route: '/image/draw/01'
+                            },{
+                                name: '图片缩放',
+                                route: '/image/draw/02'
                             },{
                                 name: '🎃',
                                 route: '/image/draw/halloween'
