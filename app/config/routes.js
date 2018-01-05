@@ -45,10 +45,11 @@ import MeasureText02 from 'pages/text/measure-text/02';
 import TextAlign01 from 'pages/text/text-align/01';
 import TextBaseLine01 from 'pages/text/text-base-line/01';
 
-import DrawImage from 'pages/draw-image/index';
-import Halloween from 'pages/draw-image/instances/halloween';
-import Screenshot from 'pages/draw-image/instances/screenshot';
-import ToDataURL from 'pages/draw-image/to-data-url';
+import Image from 'pages/image/index';
+import DrawImage from 'pages/image/draw/img';
+import Halloween from 'pages/image/draw/halloween';
+import Screenshot from 'pages/image/draw/screenshot';
+import ToDataURL from 'pages/image/export/to-data-url';
 
 import Instances from 'pages/instances/index';
 import Tangram from 'pages/instances/tangram';
@@ -98,10 +99,11 @@ export default [
     { path: '/text/text-align/01', component: TextAlign01 },
     { path: '/text/text-base-line/01', component: TextBaseLine01 },
 
-    { path: '/draw-image', component: DrawImage },
-    { path: '/draw-image/instances/halloween', component: Halloween },
-    { path: '/draw-image/instances/screenshot', component: Screenshot },
-    { path: '/draw-image/to-data-url', component: ToDataURL },
+    { path: '/image', component: Image },
+    { path: '/image/draw/img', component: DrawImage },
+    { path: '/image/draw/halloween', component: Halloween },
+    { path: '/image/draw/screenshot', component: Screenshot },
+    { path: '/image/export/to-data-url', component: ToDataURL },
 
     { path: '/instances', component: Instances },
     { path: '/instances/tangram', component: Tangram },

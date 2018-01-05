@@ -78,7 +78,8 @@ module.exports = {
             vue: path.join(__dirname, 'node_modules/vue/dist/vue'),
             components: path.join(__dirname, './app/component'),
             filter: path.join(__dirname, './app/filter'),
-            'pages': path.join(__dirname, './app/pages'),
+            assets: path.join(__dirname, 'app/assets'),
+            pages: path.join(__dirname, './app/pages'),
         }
     },
     plugins: []
