@@ -23,6 +23,9 @@
                             {
                                 name: '01',
                                 route: '/text/fill-text/01'
+                            },{
+                                name: '02',
+                                route: '/text/fill-text/02'
                             }
                         ],
                     },{
