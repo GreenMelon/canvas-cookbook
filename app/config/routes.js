@@ -36,6 +36,7 @@ import RadialGradient02 from 'pages/gradient/radial/02';
 
 import Pattern from 'pages/pattern/index';
 import Pattern01 from 'pages/pattern/01';
+import Pattern02 from 'pages/pattern/02';
 
 import Text from 'pages/text/index';
 import StrokeText01 from 'pages/text/stroke-text/01';
@@ -51,6 +52,7 @@ import DrawImage02 from 'pages/image/draw/02';
 import DrawImage03 from 'pages/image/draw/03';
 import Halloween from 'pages/image/draw/halloween';
 import Screenshot from 'pages/image/draw/screenshot';
+import ClipImage01 from 'pages/image/clip/01';
 import ToDataURL from 'pages/image/export/to-data-url';
 
 import Instances from 'pages/instances/index';
@@ -92,6 +94,7 @@ export default [
 
     { path: '/pattern', component: Pattern },
     { path: '/pattern/01', component: Pattern01 },
+    { path: '/pattern/02', component: Pattern02 },
 
     { path: '/text', component: Text },
     { path: '/text/stroke-text/01', component: StrokeText01 },
@@ -107,6 +110,7 @@ export default [
     { path: '/image/draw/03', component: DrawImage03 },
     { path: '/image/draw/halloween', component: Halloween },
     { path: '/image/draw/screenshot', component: Screenshot },
+    { path: '/image/clip/01', component: ClipImage01 },
     { path: '/image/export/to-data-url', component: ToDataURL },
 
     { path: '/instances', component: Instances },
