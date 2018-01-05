@@ -10,22 +10,25 @@
             return {
                 categories: [
                     {
-                        name: '实例',
+                        name: '绘制',
                         instances: [
                             {
+                                name: '绘制页面上的图片',
+                                route: '/image/draw/img'
+                            },{
                                 name: '🎃',
-                                route: '/draw-image/instances/halloween'
+                                route: '/image/draw/halloween'
                             },{
                                 name: '视频截图',
-                                route: '/draw-image/instances/screenshot'
+                                route: '/image/draw/screenshot'
                             }
                         ],
                     },{
-                        name: 'toDataURL',
+                        name: '导出',
                         instances: [
                             {
-                                name: '001',
-                                route: '/draw-image/to-data-url'
+                                name: 'toDataURL',
+                                route: '/image/export/to-data-url'
                             }
                         ],
                     }

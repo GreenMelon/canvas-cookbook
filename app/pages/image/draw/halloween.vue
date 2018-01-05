@@ -17,7 +17,7 @@
                 this.canvas = document.getElementById('canvas');
                 this.context = this.canvas.getContext('2d');
 
-                let img = new Image();
+                const img = new Image();
                 img.src = src;
                 img.onload = () => {
                     this.draw(img);
