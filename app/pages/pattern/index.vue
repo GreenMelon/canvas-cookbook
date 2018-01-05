@@ -13,8 +13,11 @@
                         name: '图章',
                         instances: [
                             {
-                                name: '01',
+                                name: '图片平铺',
                                 route: '/pattern/01'
+                            },{
+                                name: '文字平铺?',
+                                route: '/pattern/02'
                             }
                         ]
                     }

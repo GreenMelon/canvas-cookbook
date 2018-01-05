@@ -30,6 +30,14 @@
                             }
                         ],
                     },{
+                        name: '裁切',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/image/clip/01'
+                            }
+                        ],
+                    },{
                         name: '导出',
                         instances: [
                             {
