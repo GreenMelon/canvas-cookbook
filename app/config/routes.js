@@ -41,6 +41,7 @@ import Pattern02 from 'pages/pattern/02';
 import Text from 'pages/text/index';
 import StrokeText01 from 'pages/text/stroke-text/01';
 import FillText01 from 'pages/text/fill-text/01';
+import FillText02 from 'pages/text/fill-text/02';
 import MeasureText01 from 'pages/text/measure-text/01';
 import MeasureText02 from 'pages/text/measure-text/02';
 import TextAlign01 from 'pages/text/text-align/01';
@@ -99,6 +100,7 @@ export default [
     { path: '/text', component: Text },
     { path: '/text/stroke-text/01', component: StrokeText01 },
     { path: '/text/fill-text/01', component: FillText01 },
+    { path: '/text/fill-text/02', component: FillText02 },
     { path: '/text/measure-text/01', component: MeasureText01 },
     { path: '/text/measure-text/02', component: MeasureText02 },
     { path: '/text/text-align/01', component: TextAlign01 },
