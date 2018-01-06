@@ -58,6 +58,7 @@ import ToDataURL from 'pages/image/export/to-data-url';
 
 import Transform from 'pages/transform/index';
 import Translate01 from 'pages/transform/translate/01';
+import Scale01 from 'pages/transform/scale/01';
 
 import Instances from 'pages/instances/index';
 import Tangram from 'pages/instances/tangram';
@@ -120,6 +121,7 @@ export default [
 
     { path: '/transform', component: Transform },
     { path: '/transform/translate/01', component: Translate01 },
+    { path: '/transform/scale/01', component: Scale01 },
 
     { path: '/instances', component: Instances },
     { path: '/instances/tangram', component: Tangram },
