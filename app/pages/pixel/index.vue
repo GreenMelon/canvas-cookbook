@@ -25,6 +25,14 @@
                                 route: '/pixel/average/01'
                             }
                         ],
+                    },{
+                        name: '亮度',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/pixel/brightness/01'
+                            }
+                        ],
                     }
                 ],
             }
