@@ -34,6 +34,9 @@
                             {
                                 name: '以原点为中心旋转',
                                 route: '/transform/rotate/01'
+                            },{
+                                name: '以图形中心为中心旋转',
+                                route: '/transform/rotate/02'
                             }
                         ]
                     }
