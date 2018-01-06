@@ -28,6 +28,14 @@
                                 route: '/transform/scale/02'
                             }
                         ]
+                    },{
+                        name: '旋转',
+                        instances: [
+                            {
+                                name: '以原点为中心旋转',
+                                route: '/transform/rotate/01'
+                            }
+                        ]
                     }
                 ]
             }

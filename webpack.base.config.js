@@ -76,6 +76,7 @@ module.exports = {
         // 别名, 可以直接使用别名来代表设定的路径以及其他
         alias: {
             vue: path.join(__dirname, 'node_modules/vue/dist/vue'),
+            '@': path.join(__dirname, 'app'),
             components: path.join(__dirname, './app/component'),
             filter: path.join(__dirname, './app/filter'),
             assets: path.join(__dirname, 'app/assets'),
