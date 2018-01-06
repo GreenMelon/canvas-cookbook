@@ -1,11 +1,6 @@
 <template>
     <main>
-        <canvas
-            id="canvas"
-            width="400"
-            height="300"
-            style="border: 1px dashed #000;"
-        ></canvas>
+        <canvas id="canvas" width="400" height="300" class="border-canvas"></canvas>
     </main>
 </template>
 
