@@ -33,6 +33,14 @@
                                 route: '/pixel/brightness/01'
                             }
                         ],
+                    },{
+                        name: '怀旧',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/pixel/sepia/01'
+                            }
+                        ],
                     }
                 ],
             }
