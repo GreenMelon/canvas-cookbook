@@ -56,6 +56,9 @@ import Screenshot from 'pages/image/draw/screenshot';
 import ClipImage01 from 'pages/image/clip/01';
 import ToDataURL from 'pages/image/export/to-data-url';
 
+import Pixel from 'pages/pixel/index';
+import Invert01 from 'pages/pixel/invert/01';
+
 import Transform from 'pages/transform/index';
 import Translate01 from 'pages/transform/translate/01';
 import Scale01 from 'pages/transform/scale/01';
@@ -121,6 +124,9 @@ export default [
     { path: '/image/draw/screenshot', component: Screenshot },
     { path: '/image/clip/01', component: ClipImage01 },
     { path: '/image/export/to-data-url', component: ToDataURL },
+
+    { path: '/pixel', component: Pixel },
+    { path: '/pixel/invert/01', component: Invert01 },
 
     { path: '/transform', component: Transform },
     { path: '/transform/translate/01', component: Translate01 },
