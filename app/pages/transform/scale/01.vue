@@ -21,6 +21,7 @@
                 const centerX1 = x1 + (x2 - x1) / 2;
                 const centerY1 = y1 + (y2 - y1) / 2;
 
+                // 整个坐标系缩放,而不是图形缩放
                 context.scale(ratio, ratio);
                 context.translate(centerX1 / ratio - centerX1, centerY1 / ratio - centerY1);
 

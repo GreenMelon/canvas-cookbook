@@ -23,6 +23,9 @@
                             {
                                 name: '01',
                                 route: '/transform/scale/01'
+                            },{
+                                name: '02 缩放改变线宽',
+                                route: '/transform/scale/02'
                             }
                         ]
                     }
