@@ -61,6 +61,7 @@ import Translate01 from 'pages/transform/translate/01';
 import Scale01 from 'pages/transform/scale/01';
 import Scale02 from 'pages/transform/scale/02';
 import Rotate01 from 'pages/transform/rotate/01';
+import Rotate02 from 'pages/transform/rotate/02';
 
 import Instances from 'pages/instances/index';
 import Tangram from 'pages/instances/tangram';
@@ -126,6 +127,7 @@ export default [
     { path: '/transform/scale/01', component: Scale01 },
     { path: '/transform/scale/02', component: Scale02 },
     { path: '/transform/rotate/01', component: Rotate01 },
+    { path: '/transform/rotate/02', component: Rotate02 },
 
     { path: '/instances', component: Instances },
     { path: '/instances/tangram', component: Tangram },
