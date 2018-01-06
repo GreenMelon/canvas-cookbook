@@ -58,6 +58,7 @@ import ToDataURL from 'pages/image/export/to-data-url';
 
 import Pixel from 'pages/pixel/index';
 import Invert01 from 'pages/pixel/invert/01';
+import Average01 from 'pages/pixel/average/01';
 
 import Transform from 'pages/transform/index';
 import Translate01 from 'pages/transform/translate/01';
@@ -127,6 +128,7 @@ export default [
 
     { path: '/pixel', component: Pixel },
     { path: '/pixel/invert/01', component: Invert01 },
+    { path: '/pixel/average/01', component: Average01 },
 
     { path: '/transform', component: Transform },
     { path: '/transform/translate/01', component: Translate01 },

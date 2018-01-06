@@ -17,6 +17,14 @@
                                 route: '/pixel/invert/01'
                             }
                         ],
+                    },{
+                        name: '黑白',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/pixel/average/01'
+                            }
+                        ],
                     }
                 ],
             }
