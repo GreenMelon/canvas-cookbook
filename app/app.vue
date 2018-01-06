@@ -23,6 +23,7 @@
                     { route: '/pattern', name: '图章' },
                     { route: '/text', name: '文本' },
                     { route: '/image', name: '图像' },
+                    { route: '/transform', name: '变形' },
                     { route: '/instances', name: '实例' },
                 ]
             }

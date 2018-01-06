@@ -56,6 +56,9 @@ import Screenshot from 'pages/image/draw/screenshot';
 import ClipImage01 from 'pages/image/clip/01';
 import ToDataURL from 'pages/image/export/to-data-url';
 
+import Transform from 'pages/transform/index';
+import Translate01 from 'pages/transform/translate/01';
+
 import Instances from 'pages/instances/index';
 import Tangram from 'pages/instances/tangram';
 import Palette from 'pages/instances/palette';
@@ -114,6 +117,9 @@ export default [
     { path: '/image/draw/screenshot', component: Screenshot },
     { path: '/image/clip/01', component: ClipImage01 },
     { path: '/image/export/to-data-url', component: ToDataURL },
+
+    { path: '/transform', component: Transform },
+    { path: '/transform/translate/01', component: Translate01 },
 
     { path: '/instances', component: Instances },
     { path: '/instances/tangram', component: Tangram },
