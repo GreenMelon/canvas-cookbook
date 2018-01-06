@@ -41,6 +41,14 @@
                                 route: '/pixel/sepia/01'
                             }
                         ],
+                    },{
+                        name: '蒙版',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/pixel/mask/01'
+                            }
+                        ],
                     }
                 ],
             }
