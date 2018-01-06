@@ -61,6 +61,7 @@ import Invert01 from 'pages/pixel/invert/01';
 import Average01 from 'pages/pixel/average/01';
 import Brightness01 from 'pages/pixel/brightness/01';
 import Sepia01 from 'pages/pixel/sepia/01';
+import Mask01 from 'pages/pixel/mask/01';
 
 import Transform from 'pages/transform/index';
 import Translate01 from 'pages/transform/translate/01';
@@ -133,6 +134,7 @@ export default [
     { path: '/pixel/average/01', component: Average01 },
     { path: '/pixel/brightness/01', component: Brightness01 },
     { path: '/pixel/sepia/01', component: Sepia01 },
+    { path: '/pixel/mask/01', component: Mask01 },
 
     { path: '/transform', component: Transform },
     { path: '/transform/translate/01', component: Translate01 },
