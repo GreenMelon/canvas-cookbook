@@ -49,6 +49,14 @@
                                 route: '/pixel/mask/01'
                             }
                         ],
+                    },{
+                        name: '透明度',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/pixel/alpha/01'
+                            }
+                        ],
                     }
                 ],
             }
