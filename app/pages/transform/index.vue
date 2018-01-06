@@ -17,6 +17,14 @@
                                 route: '/transform/translate/01'
                             }
                         ]
+                    },{
+                        name: '缩放',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/transform/scale/01'
+                            }
+                        ]
                     }
                 ]
             }
