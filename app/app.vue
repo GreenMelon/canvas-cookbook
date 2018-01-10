@@ -26,8 +26,9 @@
                     { route: '/shadow', name: '阴影' },
                     { route: '/pattern', name: '图章' },
                     { route: '/transform', name: '变形' },
+                    { route: '/events', name: '事件' },
                     { route: '/instances', name: '实例' },
-                ]
+                ],
             }
         }
     };
