@@ -29,15 +29,6 @@ import LineCap from 'pages/shapes/stroke/line-cap';
 import SetLineDash from 'pages/shapes/stroke/set-line-dash';
 import Fill from 'pages/shapes/fill/01';
 
-import Gradient from 'pages/gradient/index';
-import LinearGradient01 from 'pages/gradient/linear/01';
-import RadialGradient01 from 'pages/gradient/radial/01';
-import RadialGradient02 from 'pages/gradient/radial/02';
-
-import Pattern from 'pages/pattern/index';
-import Pattern01 from 'pages/pattern/01';
-import Pattern02 from 'pages/pattern/02';
-
 import Text from 'pages/text/index';
 import StrokeText01 from 'pages/text/stroke-text/01';
 import FillText01 from 'pages/text/fill-text/01';
@@ -64,12 +55,26 @@ import Sepia01 from 'pages/pixel/sepia/01';
 import Mask01 from 'pages/pixel/mask/01';
 import Alpha01 from 'pages/pixel/alpha/01';
 
+import Gradient from 'pages/gradient/index';
+import LinearGradient01 from 'pages/gradient/linear/01';
+import RadialGradient01 from 'pages/gradient/radial/01';
+import RadialGradient02 from 'pages/gradient/radial/02';
+
+import Shadow from 'pages/shadow/index';
+import Shadow01 from 'pages/shadow/01';
+
+import Pattern from 'pages/pattern/index';
+import Pattern01 from 'pages/pattern/01';
+import Pattern02 from 'pages/pattern/02';
+
 import Transform from 'pages/transform/index';
 import Translate01 from 'pages/transform/translate/01';
 import Scale01 from 'pages/transform/scale/01';
 import Scale02 from 'pages/transform/scale/02';
 import Rotate01 from 'pages/transform/rotate/01';
 import Rotate02 from 'pages/transform/rotate/02';
+
+import Events from 'pages/events/index';
 
 import Instances from 'pages/instances/index';
 import Tangram from 'pages/instances/tangram';
@@ -103,15 +108,6 @@ export default [
     { path: '/shapes/stroke/set-line-dash', component: SetLineDash },
     { path: '/shapes/fill/01', component: Fill },
 
-    { path: '/gradient', component: Gradient },
-    { path: '/gradient/linear/01', component: LinearGradient01 },
-    { path: '/gradient/radial/01', component: RadialGradient01 },
-    { path: '/gradient/radial/02', component: RadialGradient02 },
-
-    { path: '/pattern', component: Pattern },
-    { path: '/pattern/01', component: Pattern01 },
-    { path: '/pattern/02', component: Pattern02 },
-
     { path: '/text', component: Text },
     { path: '/text/stroke-text/01', component: StrokeText01 },
     { path: '/text/fill-text/01', component: FillText01 },
@@ -138,12 +134,26 @@ export default [
     { path: '/pixel/mask/01', component: Mask01 },
     { path: '/pixel/alpha/01', component: Alpha01 },
 
+    { path: '/gradient', component: Gradient },
+    { path: '/gradient/linear/01', component: LinearGradient01 },
+    { path: '/gradient/radial/01', component: RadialGradient01 },
+    { path: '/gradient/radial/02', component: RadialGradient02 },
+
+    { path: '/shadow', component: Shadow },
+    { path: '/shadow/01', component: Shadow01 },
+
+    { path: '/pattern', component: Pattern },
+    { path: '/pattern/01', component: Pattern01 },
+    { path: '/pattern/02', component: Pattern02 },
+
     { path: '/transform', component: Transform },
     { path: '/transform/translate/01', component: Translate01 },
     { path: '/transform/scale/01', component: Scale01 },
     { path: '/transform/scale/02', component: Scale02 },
     { path: '/transform/rotate/01', component: Rotate01 },
     { path: '/transform/rotate/02', component: Rotate02 },
+
+    { path: '/events', component: Events },
 
     { path: '/instances', component: Instances },
     { path: '/instances/tangram', component: Tangram },

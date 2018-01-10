@@ -19,14 +19,16 @@
                 modules: [
                     { route: '/basic', name: '基础' },
                     { route: '/shapes', name: '基本形状' },
-                    { route: '/gradient', name: '渐变' },
-                    { route: '/pattern', name: '图章' },
                     { route: '/text', name: '文本' },
                     { route: '/image', name: '图像' },
                     { route: '/pixel', name: '像素' },
+                    { route: '/gradient', name: '渐变' },
+                    { route: '/shadow', name: '阴影' },
+                    { route: '/pattern', name: '图章' },
                     { route: '/transform', name: '变形' },
+                    { route: '/events', name: '事件' },
                     { route: '/instances', name: '实例' },
-                ]
+                ],
             }
         }
     };
