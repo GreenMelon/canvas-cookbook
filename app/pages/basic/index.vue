@@ -10,6 +10,14 @@
             return {
                 categories: [
                     {
+                        name: '路径',
+                        instances: [
+                            {
+                                name: '判断点是否在路径上',
+                                route: '/basic/path/01'
+                            }
+                        ],
+                    },{
                         name: '保存状态 && 恢复状态',
                         instances: [
                             {
