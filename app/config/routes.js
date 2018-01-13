@@ -6,6 +6,7 @@ import NotFound from 'pages/index/404';
 import Index from 'pages/index/index';
 
 import Basic from 'pages/basic/index';
+import Path01 from 'pages/basic/path/01';
 import Restore01 from 'pages/basic/restore/01';
 
 import BasicShapes from 'pages/shapes/index';
@@ -85,6 +86,7 @@ export default [
     { path: '/index', component: Index },
 
     { path: '/basic', component: Basic },
+    { path: '/basic/path/01', component: Path01 },
     { path: '/basic/restore/01', component: Restore01 },
 
     { path: '/shapes', component: BasicShapes },
