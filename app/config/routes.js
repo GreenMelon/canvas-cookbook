@@ -5,9 +5,10 @@
 import NotFound from 'pages/index/404';
 import Index from 'pages/index/index';
 
-import Basic from 'pages/basic/index';
-import Path01 from 'pages/basic/path/01';
-import Restore01 from 'pages/basic/restore/01';
+import PathAndStatus from 'pages/path-and-status/index';
+import Path01 from 'pages/path-and-status/path/01';
+import Clip01 from 'pages/path-and-status/clip/01';
+import Restore01 from 'pages/path-and-status/restore/01';
 
 import BasicShapes from 'pages/shapes/index';
 import Line01 from 'pages/shapes/line/01';
@@ -85,9 +86,10 @@ export default [
     { path: '/', redirect: '/text/fill-text/01' },
     { path: '/index', component: Index },
 
-    { path: '/basic', component: Basic },
-    { path: '/basic/path/01', component: Path01 },
-    { path: '/basic/restore/01', component: Restore01 },
+    { path: '/path-and-status', component: PathAndStatus },
+    { path: '/path-and-status/path/01', component: Path01 },
+    { path: '/path-and-status/clip/01', component: Clip01 },
+    { path: '/path-and-status/restore/01', component: Restore01 },
 
     { path: '/shapes', component: BasicShapes },
     { path: '/shapes/line/01', component: Line01 },

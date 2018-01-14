@@ -14,7 +14,15 @@
                         instances: [
                             {
                                 name: '判断点是否在路径上',
-                                route: '/basic/path/01'
+                                route: '/path-and-status/path/01'
+                            }
+                        ],
+                    },{
+                        name: '指定可视区域',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/path-and-status/clip/01'
                             }
                         ],
                     },{
@@ -22,7 +30,7 @@
                         instances: [
                             {
                                 name: '01',
-                                route: '/basic/restore/01'
+                                route: '/path-and-status/restore/01'
                             }
                         ],
                     }

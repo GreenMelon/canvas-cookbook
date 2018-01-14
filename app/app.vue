@@ -17,7 +17,7 @@
         data() {
             return {
                 modules: [
-                    { route: '/basic', name: '基础' },
+                    { route: '/path-and-status', name: '状态和路径' },
                     { route: '/shapes', name: '基本形状' },
                     { route: '/text', name: '文本' },
                     { route: '/image', name: '图像' },
