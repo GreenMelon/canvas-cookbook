@@ -56,6 +56,7 @@ import Brightness01 from 'pages/pixel/brightness/01';
 import Sepia01 from 'pages/pixel/sepia/01';
 import Mask01 from 'pages/pixel/mask/01';
 import Alpha01 from 'pages/pixel/alpha/01';
+import GlobalAlpha from 'pages/pixel/global/alpha';
 
 import Gradient from 'pages/gradient/index';
 import LinearGradient01 from 'pages/gradient/linear/01';
@@ -137,6 +138,7 @@ export default [
     { path: '/pixel/sepia/01', component: Sepia01 },
     { path: '/pixel/mask/01', component: Mask01 },
     { path: '/pixel/alpha/01', component: Alpha01 },
+    { path: '/pixel/globalAlpha', component: GlobalAlpha },
 
     { path: '/gradient', component: Gradient },
     { path: '/gradient/linear/01', component: LinearGradient01 },

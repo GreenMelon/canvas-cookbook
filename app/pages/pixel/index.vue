@@ -57,6 +57,14 @@
                                 route: '/pixel/alpha/01'
                             }
                         ],
+                    },{
+                        name: '全局',
+                        instances: [
+                            {
+                                name: '透明度',
+                                route: '/pixel/globalAlpha'
+                            }
+                        ],
                     }
                 ],
             }
