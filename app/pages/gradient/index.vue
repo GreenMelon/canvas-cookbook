@@ -15,6 +15,9 @@
                             {
                                 name: '01',
                                 route: '/gradient/linear/01'
+                            },{
+                                name: '渐变圆环',
+                                route: '/gradient/linear/02'
                             }
                         ]
                     },{
