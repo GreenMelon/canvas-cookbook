@@ -1,7 +1,7 @@
 <template>
     <main>
         <canvas id="canvas" width="250" height="150"></canvas>
-        <img id="img" src="../../assets/icon-smile.png">
+        <img id="img" src="~assets/icon-smile.png">
     </main>
 </template>
 

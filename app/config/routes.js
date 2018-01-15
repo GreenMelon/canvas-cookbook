@@ -61,6 +61,7 @@ import GlobalAlpha from 'pages/pixel/global/alpha';
 import Gradient from 'pages/gradient/index';
 import LinearGradient01 from 'pages/gradient/linear/01';
 import LinearGradient02 from 'pages/gradient/linear/02';
+import LinearGradient03 from 'pages/gradient/linear/03';
 import RadialGradient01 from 'pages/gradient/radial/01';
 import RadialGradient02 from 'pages/gradient/radial/02';
 
@@ -144,6 +145,7 @@ export default [
     { path: '/gradient', component: Gradient },
     { path: '/gradient/linear/01', component: LinearGradient01 },
     { path: '/gradient/linear/02', component: LinearGradient02 },
+    { path: '/gradient/linear/03', component: LinearGradient03 },
     { path: '/gradient/radial/01', component: RadialGradient01 },
     { path: '/gradient/radial/02', component: RadialGradient02 },
 
