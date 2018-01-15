@@ -18,6 +18,9 @@
                             },{
                                 name: '渐变圆环',
                                 route: '/gradient/linear/02'
+                            },{
+                                name: '非对称的渐变圆环',
+                                route: '/gradient/linear/03'
                             }
                         ]
                     },{
