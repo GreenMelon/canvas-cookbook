@@ -62,7 +62,10 @@
                         instances: [
                             {
                                 name: '透明度',
-                                route: '/pixel/globalAlpha'
+                                route: '/pixel/global-alpha'
+                            },{
+                                name: '混合操作',
+                                route: '/pixel/global-composite-operation'
                             }
                         ],
                     }
