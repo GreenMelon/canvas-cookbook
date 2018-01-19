@@ -27,7 +27,7 @@
 
                 // Step1: 绘制遮罩图形
                 context.beginPath();
-                context.arc(150, 150, 50, 0, 360 * Math.PI / 180, false);
+                context.arc(150, 150, 150, 0, 360 * Math.PI / 180, false);
                 context.closePath();
                 context.stroke();
 
