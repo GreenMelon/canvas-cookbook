@@ -9,6 +9,15 @@
         data() {
             return {
                 categories: [
+                    {
+                        name: 'mouse',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/events/mouse/01'
+                            }
+                        ]
+                    }
                 ],
             }
         }

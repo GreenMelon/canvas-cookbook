@@ -81,6 +81,7 @@ import Rotate01 from 'pages/transform/rotate/01';
 import Rotate02 from 'pages/transform/rotate/02';
 
 import Events from 'pages/events/index';
+import Mouse01 from 'pages/events/mouse/01';
 
 import Instances from 'pages/instances/index';
 import Tangram from 'pages/instances/tangram';
@@ -166,6 +167,7 @@ export default [
     { path: '/transform/rotate/02', component: Rotate02 },
 
     { path: '/events', component: Events },
+    { path: '/events/mouse/01', component: Mouse01 },
 
     { path: '/instances', component: Instances },
     { path: '/instances/tangram', component: Tangram },
