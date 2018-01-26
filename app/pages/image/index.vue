@@ -22,6 +22,9 @@
                                 name: '绘制图片的一部分',
                                 route: '/image/draw/03'
                             },{
+                                name: '绘制图片和文字',
+                                route: '/image/draw/04'
+                            },{
                                 name: '🎃',
                                 route: '/image/draw/halloween'
                             },{

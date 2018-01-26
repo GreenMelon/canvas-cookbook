@@ -44,6 +44,7 @@ import Image from 'pages/image/index';
 import DrawImage01 from 'pages/image/draw/01';
 import DrawImage02 from 'pages/image/draw/02';
 import DrawImage03 from 'pages/image/draw/03';
+import DrawImage04 from 'pages/image/draw/04';
 import Halloween from 'pages/image/draw/halloween';
 import Screenshot from 'pages/image/draw/screenshot';
 import ClipImage01 from 'pages/image/clip/01';
@@ -130,6 +131,7 @@ export default [
     { path: '/image/draw/01', component: DrawImage01 },
     { path: '/image/draw/02', component: DrawImage02 },
     { path: '/image/draw/03', component: DrawImage03 },
+    { path: '/image/draw/04', component: DrawImage04 },
     { path: '/image/draw/halloween', component: Halloween },
     { path: '/image/draw/screenshot', component: Screenshot },
     { path: '/image/clip/01', component: ClipImage01 },
