@@ -25,6 +25,8 @@
         <div id="containner">
             <div class="wrap">
                 <img
+                    @dragstart="startDragImg($event)"
+                    draggable="true"
                     src="~images/superman.jpg"
                     id="img"
                     alt=""
@@ -70,7 +72,7 @@
                 context.drawImage(img, 0, 0);
 
                 // 绘制背景
-                let coords = [0 , 60, 80, 20];
+                let coords = [0, 60, 80, 20];
                 coords = coords.map(i => i / ratio);
                 context.fillStyle = 'rgba(0, 128, 255, 0.8)';
                 context.fillRect(coords[0], coords[1], coords[2], coords[3]);
@@ -90,6 +92,11 @@
 
                 const url = this.generateImg(img);
                 this.images.push(url);
+            },
+            startDragImg(ev) {
+                console.log('startDragImg');
+
+                ev.dataTransfer.setDragImage(this.canvas, 0, 0);
             },
         },
         mounted() {
