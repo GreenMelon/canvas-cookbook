@@ -26,6 +26,7 @@
             <div class="wrap">
                 <img
                     @dragstart="startDragImg($event)"
+                    @drag="onDrag($event)"
                     draggable="true"
                     src="~images/superman.jpg"
                     id="img"
@@ -97,6 +98,9 @@
                 console.log('startDragImg');
 
                 ev.dataTransfer.setDragImage(this.canvas, 0, 0);
+            },
+            onDrag(ev) {
+                console.log('onDrag');
             },
         },
         mounted() {
