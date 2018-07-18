@@ -41,6 +41,14 @@
                             }
                         ],
                     },{
+                        name: '合并',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/image/merge/01'
+                            }
+                        ],
+                    },{
                         name: '导出',
                         instances: [
                             {
