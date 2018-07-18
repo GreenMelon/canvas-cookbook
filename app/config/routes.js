@@ -48,6 +48,7 @@ import DrawImage04 from 'pages/image/draw/04';
 import Halloween from 'pages/image/draw/halloween';
 import Screenshot from 'pages/image/draw/screenshot';
 import ClipImage01 from 'pages/image/clip/01';
+import MergeImage01 from 'pages/image/merge/01';
 import ToDataURL from 'pages/image/export/to-data-url';
 
 import Pixel from 'pages/pixel/index';
@@ -135,6 +136,7 @@ export default [
     { path: '/image/draw/halloween', component: Halloween },
     { path: '/image/draw/screenshot', component: Screenshot },
     { path: '/image/clip/01', component: ClipImage01 },
+    { path: '/image/merge/01', component: MergeImage01 },
     { path: '/image/export/to-data-url', component: ToDataURL },
 
     { path: '/pixel', component: Pixel },

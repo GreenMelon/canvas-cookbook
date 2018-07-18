@@ -1,7 +1,11 @@
 <template>
     <main>
         <canvas id="canvas" width="80" height="60"></canvas>
-        <img v-for="img in images" :src="img">
+        <img
+            v-for="(img, index) in images"
+            :key="index"
+            :src="img"
+        >
         <button @click="exportImg" type="button">export</button>
     </main>
 </template>
