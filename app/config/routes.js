@@ -82,6 +82,9 @@ import Scale02 from 'pages/transform/scale/02';
 import Rotate01 from 'pages/transform/rotate/01';
 import Rotate02 from 'pages/transform/rotate/02';
 
+import Animation from 'pages/animation/index';
+import ColorAnimation01 from 'pages/animation/color/01';
+
 import Events from 'pages/events/index';
 import Mouse01 from 'pages/events/mouse/01';
 
@@ -169,6 +172,9 @@ export default [
     { path: '/transform/scale/02', component: Scale02 },
     { path: '/transform/rotate/01', component: Rotate01 },
     { path: '/transform/rotate/02', component: Rotate02 },
+
+    { path: '/animation', component: Animation },
+    { path: '/animation/color/01', component: ColorAnimation01 },
 
     { path: '/events', component: Events },
     { path: '/events/mouse/01', component: Mouse01 },
