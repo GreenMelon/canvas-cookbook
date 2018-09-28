@@ -58,6 +58,14 @@
                             }
                         ],
                     },{
+                        name: '高斯模糊',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/pixel/gaussian-blur/01'
+                            }
+                        ],
+                    },{
                         name: '全局',
                         instances: [
                             {
