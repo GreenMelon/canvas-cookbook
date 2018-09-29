@@ -59,6 +59,7 @@ import Sepia01 from 'pages/pixel/sepia/01';
 import Mask01 from 'pages/pixel/mask/01';
 import Alpha01 from 'pages/pixel/alpha/01';
 import GaussianBlur01 from 'pages/pixel/gaussian-blur/01';
+import Mosaic01 from 'pages/pixel/mosaic/01';
 import GlobalAlpha from 'pages/pixel/global/alpha';
 import GlobalCompositeOperation from 'pages/pixel/global/composite-operation';
 
@@ -151,6 +152,7 @@ export default [
     { path: '/pixel/mask/01', component: Mask01 },
     { path: '/pixel/alpha/01', component: Alpha01 },
     { path: '/pixel/gaussian-blur/01', component: GaussianBlur01 },
+    { path: '/pixel/mosaic/01', component: Mosaic01 },
     { path: '/pixel/global-alpha', component: GlobalAlpha },
     { path: '/pixel/global-composite-operation', component: GlobalCompositeOperation },
 

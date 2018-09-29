@@ -66,6 +66,14 @@
                             }
                         ],
                     },{
+                        name: '马赛克',
+                        instances: [
+                            {
+                                name: '01',
+                                route: '/pixel/mosaic/01'
+                            }
+                        ],
+                    },{
                         name: '全局',
                         instances: [
                             {
