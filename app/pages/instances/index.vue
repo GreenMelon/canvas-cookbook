@@ -25,6 +25,14 @@
                                 route: '/instances/palette'
                             }
                         ]
+                    },{
+                        name: '其他',
+                        instances: [
+                            {
+                                name: '放大镜',
+                                route: '/instances/magnifier'
+                            }
+                        ]
                     }
                 ]
             }

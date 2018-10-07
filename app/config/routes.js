@@ -93,6 +93,7 @@ import Mouse01 from 'pages/events/mouse/01';
 import Instances from 'pages/instances/index';
 import Tangram from 'pages/instances/tangram';
 import Palette from 'pages/instances/palette';
+import Magnifier from 'pages/instances/magnifier';
 
 export default [
     { path: '/', redirect: '/text/fill-text/01' },
@@ -186,6 +187,7 @@ export default [
     { path: '/instances', component: Instances },
     { path: '/instances/tangram', component: Tangram },
     { path: '/instances/palette', component: Palette },
+    { path: '/instances/magnifier', component: Magnifier },
 
     { path: '*', component: NotFound }
 ];
