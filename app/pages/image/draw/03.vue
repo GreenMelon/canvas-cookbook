@@ -3,6 +3,10 @@
         width: 300px;
         height: auto;
     }
+    canvas {
+        position: absolute;
+        z-index: -1;
+    }
 </style>
 
 <template>
@@ -13,6 +17,12 @@
         </div>
 
         <canvas id="canvas" width="800" height="600"></canvas>
+
+        <img
+            v-for="(img, index) in images"
+            :key="index"
+            :src="img"
+        >
     </main>
 </template>
 
@@ -22,6 +32,7 @@
             return {
                 canvas: null,
                 context: null,
+                images: [],
             }
         },
         methods: {
@@ -30,12 +41,22 @@
                 this.context = this.canvas.getContext('2d');
 
                 const img = document.getElementById('img');
+
                 // source, destination
-                this.context.drawImage(img, 130, 20, 200, 400, 0, 0, 300, 600);
+                this.context.drawImage(img, 0, 0, 460, 230, 0, 0, 460, 230);
+
+                this.exportImages();
+
+                // source, destination
+                this.context.drawImage(img, 0, 230, 460, 230, 0, 0, 460, 230);
+
+                this.exportImages();
+            },
+            exportImages() {
+                let url = this.canvas.toDataURL('image/png');
+                this.images.push(url);
             },
         },
-        mounted() {
-            this.draw();
-        },
+        mounted() {},
     };
 </script>
