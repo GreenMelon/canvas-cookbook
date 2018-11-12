@@ -54,6 +54,9 @@
                             {
                                 name: 'toDataURL',
                                 route: '/image/export/to-data-url'
+                            }, {
+                                name: '高度限制',
+                                route: '/image/export/height-limit'
                             }
                         ],
                     }

@@ -50,6 +50,7 @@ import Screenshot from 'pages/image/draw/screenshot';
 import ClipImage01 from 'pages/image/clip/01';
 import MergeImage01 from 'pages/image/merge/01';
 import ToDataURL from 'pages/image/export/to-data-url';
+import HeightLimit from 'pages/image/export/height-limit';
 
 import Pixel from 'pages/pixel/index';
 import Invert01 from 'pages/pixel/invert/01';
@@ -144,6 +145,7 @@ export default [
     { path: '/image/clip/01', component: ClipImage01 },
     { path: '/image/merge/01', component: MergeImage01 },
     { path: '/image/export/to-data-url', component: ToDataURL },
+    { path: '/image/export/height-limit', component: HeightLimit },
 
     { path: '/pixel', component: Pixel },
     { path: '/pixel/invert/01', component: Invert01 },
