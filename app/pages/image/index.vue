@@ -57,7 +57,7 @@
                             }, {
                                 name: '高度限制',
                                 route: '/image/export/height-limit'
-                            }
+                            },
                         ],
                     }
                 ],
