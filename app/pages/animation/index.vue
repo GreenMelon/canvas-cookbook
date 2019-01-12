@@ -10,11 +10,14 @@
             return {
                 categories: [
                     {
-                        name: '颜色动画',
+                        name: '实例',
                         instances: [
                             {
-                                name: '01',
-                                route: '/animation/color/01',
+                                name: '颜色动画',
+                                route: '/animation/color',
+                            }, {
+                                name: '倒计时',
+                                route: '/animation/countdown',
                             }
                         ],
                     }

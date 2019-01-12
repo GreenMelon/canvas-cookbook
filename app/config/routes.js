@@ -86,7 +86,8 @@ import Rotate01 from 'pages/transform/rotate/01';
 import Rotate02 from 'pages/transform/rotate/02';
 
 import Animation from 'pages/animation/index';
-import ColorAnimation01 from 'pages/animation/color/01';
+import ColorAnimation from 'pages/animation/color';
+import CountDownAnimation from 'pages/animation/countdown';
 
 import Events from 'pages/events/index';
 import Mouse01 from 'pages/events/mouse/01';
@@ -181,7 +182,8 @@ export default [
     { path: '/transform/rotate/02', component: Rotate02 },
 
     { path: '/animation', component: Animation },
-    { path: '/animation/color/01', component: ColorAnimation01 },
+    { path: '/animation/color', component: ColorAnimation },
+    { path: '/animation/countdown', component: CountDownAnimation },
 
     { path: '/events', component: Events },
     { path: '/events/mouse/01', component: Mouse01 },
