@@ -9,6 +9,7 @@
         <div class="wrapper">
             <canvas
                 v-for="item in operations"
+                :key="item"
                 :id="item"
                 width="220"
                 height="220"
