@@ -4,6 +4,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     // 入口配置
@@ -33,55 +34,76 @@ module.exports = {
     },
     // 加载器
     module: {
-        // 不同的 loaders 通过正则来对不同模块文件进行处理
-        loaders: [
+        // 不同的 rules 通过正则来对不同模块文件进行处理
+        rules: [
             {
                 test: /\.vue$/,
-                loader: 'vue'
+                loader: 'vue-loader'
             },{
                 // babel-loader: 语法解析
                 test: /\.js$/,
-                loader: 'babel',
                 // exclude 可以过滤掉特定文件
-                exclude: /node_modules/
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                options: {
+                    presets: ['es2015', 'stage-2'],
+                    plugins: ['transform-runtime']
+                }
             },{
                 test: /\.css$/,
-                loader: 'style!css!postcss'
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'autoprefixer-loader'
+                ],
+                use: ExtractTextPlugin.extract({
+                    use: 'css-loader'
+                })
             },{
                 test: /\.less$/,
-                loader: 'style!css!less?sourceMap'
+                use: [
+                    {
+                        loader: 'style-loader'
+                    },{
+                        loader: 'css-loader'
+                    },{
+                        loader: 'less-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }
+                ]
             },{
                 /**
                  * url-loader
                  * 它会将小于8kb的图片、iconfont字体都转为base64, 超过8kb的才会生成具体文件
                  */
                 test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
-                loader: 'url-loader?limit=8192'
+                loader: 'url-loader',
+                options: {
+                    limit: 8192
+                }
             },{
                 test: /\.(html|tpl)$/,
                 loader: 'html-loader'
             }
         ]
     },
-    babel: {
-        presets: ['es2015'],
-        plugins: ['transform-runtime']
-    },
     resolve: {
         /**
          * require 时省略的扩展名
          * 如 require('module') 不需要 module.js
          */
-        extensions: ['', '.js', '.vue'],
+        extensions: ['.js', '.vue'],
         // 别名, 可以直接使用别名来代表设定的路径以及其他
         alias: {
             vue: path.join(__dirname, 'node_modules/vue/dist/vue'),
             '@': path.join(__dirname, 'app'),
-            components: path.join(__dirname, './app/component'),
-            filter: path.join(__dirname, './app/filter'),
-            assets: path.join(__dirname, 'app/assets'),
-            images: path.join(__dirname, 'app/images'),
+            components: path.join(__dirname, './app/components'),
             pages: path.join(__dirname, './app/pages'),
+            images: path.join(__dirname, './app/images'),
+            assets: path.join(__dirname, './app/assets'),
+            filter: path.join(__dirname, './app/filters'),
         }
     },
     plugins: []
