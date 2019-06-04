@@ -2,100 +2,100 @@
  * 定义路由
  */
 
-import NotFound from 'pages/index/404';
-import Index from 'pages/index/index';
+const NotFound = () => import('pages/index/404');
+const Index = () => import('pages/index/index');
 
-import PathAndStatus from 'pages/path-and-status/index';
-import Path01 from 'pages/path-and-status/path/01';
-import Clip01 from 'pages/path-and-status/clip/01';
-import Restore01 from 'pages/path-and-status/restore/01';
+const PathAndStatus = () => import('pages/path-and-status/index');
+const Path01 = () => import('pages/path-and-status/path/01');
+const Clip01 = () => import('pages/path-and-status/clip/01');
+const Restore01 = () => import('pages/path-and-status/restore/01');
 
-import BasicShapes from 'pages/shapes/index';
-import Line01 from 'pages/shapes/line/01';
-import Triangle01 from 'pages/shapes/triangle/01';
-import Rectangle01 from 'pages/shapes/rectangle/01';
-import Rectangle02 from 'pages/shapes/rectangle/02';
-import Rectangle03 from 'pages/shapes/rectangle/03';
-import Rectangle04 from 'pages/shapes/rectangle/04';
-import Polygon01 from 'pages/shapes/polygon/01';
-import Circle01 from 'pages/shapes/circle/01';
-import Circle02 from 'pages/shapes/circle/02';
-import Arc01 from 'pages/shapes/arc/01';
-import ArcTo01 from 'pages/shapes/arcTo/01';
-import QuadraticCurveTo01 from 'pages/shapes/quadratic-curve-to/01';
-import BezierCurveTo01 from 'pages/shapes/bezier-curve-to/01';
-import LineWidth from 'pages/shapes/stroke/line-width';
-import LineJoin from 'pages/shapes/stroke/line-join';
-import LineJoin02 from 'pages/shapes/stroke/line-join-02';
-import LineCap from 'pages/shapes/stroke/line-cap';
-import SetLineDash from 'pages/shapes/stroke/set-line-dash';
-import Fill from 'pages/shapes/fill/01';
+const BasicShapes = () => import('pages/shapes/index');
+const Line01 = () => import('pages/shapes/line/01');
+const Triangle01 = () => import('pages/shapes/triangle/01');
+const Rectangle01 = () => import('pages/shapes/rectangle/01');
+const Rectangle02 = () => import('pages/shapes/rectangle/02');
+const Rectangle03 = () => import('pages/shapes/rectangle/03');
+const Rectangle04 = () => import('pages/shapes/rectangle/04');
+const Polygon01 = () => import('pages/shapes/polygon/01');
+const Circle01 = () => import('pages/shapes/circle/01');
+const Circle02 = () => import('pages/shapes/circle/02');
+const Arc01 = () => import('pages/shapes/arc/01');
+const ArcTo01 = () => import('pages/shapes/arcTo/01');
+const QuadraticCurveTo01 = () => import('pages/shapes/quadratic-curve-to/01');
+const BezierCurveTo01 = () => import('pages/shapes/bezier-curve-to/01');
+const LineWidth = () => import('pages/shapes/stroke/line-width');
+const LineJoin = () => import('pages/shapes/stroke/line-join');
+const LineJoin02 = () => import('pages/shapes/stroke/line-join-02');
+const LineCap = () => import('pages/shapes/stroke/line-cap');
+const SetLineDash = () => import('pages/shapes/stroke/set-line-dash');
+const Fill = () => import('pages/shapes/fill/01');
 
-import Text from 'pages/text/index';
-import StrokeText01 from 'pages/text/stroke-text/01';
-import FillText01 from 'pages/text/fill-text/01';
-import FillText02 from 'pages/text/fill-text/02';
-import MeasureText01 from 'pages/text/measure-text/01';
-import MeasureText02 from 'pages/text/measure-text/02';
-import TextAlign01 from 'pages/text/text-align/01';
-import TextBaseLine01 from 'pages/text/text-base-line/01';
+const Text = () => import('pages/text/index');
+const StrokeText01 = () => import('pages/text/stroke-text/01');
+const FillText01 = () => import('pages/text/fill-text/01');
+const FillText02 = () => import('pages/text/fill-text/02');
+const MeasureText01 = () => import('pages/text/measure-text/01');
+const MeasureText02 = () => import('pages/text/measure-text/02');
+const TextAlign01 = () => import('pages/text/text-align/01');
+const TextBaseLine01 = () => import('pages/text/text-base-line/01');
 
-import Image from 'pages/image/index';
-import DrawImage01 from 'pages/image/draw/01';
-import DrawImage02 from 'pages/image/draw/02';
-import DrawImage03 from 'pages/image/draw/03';
-import DrawImage04 from 'pages/image/draw/04';
-import Halloween from 'pages/image/draw/halloween';
-import Screenshot from 'pages/image/draw/screenshot';
-import ClipImage01 from 'pages/image/clip/01';
-import MergeImage01 from 'pages/image/merge/01';
-import HeightLimit from 'pages/image/export/height-limit';
-import ToDataURL from 'pages/image/export/to-data-url';
+const Image = () => import('pages/image/index');
+const DrawImage01 = () => import('pages/image/draw/01');
+const DrawImage02 = () => import('pages/image/draw/02');
+const DrawImage03 = () => import('pages/image/draw/03');
+const DrawImage04 = () => import('pages/image/draw/04');
+const Halloween = () => import('pages/image/draw/halloween');
+const Screenshot = () => import('pages/image/draw/screenshot');
+const ClipImage01 = () => import('pages/image/clip/01');
+const MergeImage01 = () => import('pages/image/merge/01');
+const HeightLimit = () => import('pages/image/export/height-limit');
+const ToDataURL = () => import('pages/image/export/to-data-url');
 
-import Pixel from 'pages/pixel/index';
-import Invert01 from 'pages/pixel/invert/01';
-import Average01 from 'pages/pixel/average/01';
-import Brightness01 from 'pages/pixel/brightness/01';
-import Sepia01 from 'pages/pixel/sepia/01';
-import Mask01 from 'pages/pixel/mask/01';
-import Alpha01 from 'pages/pixel/alpha/01';
-import GaussianBlur01 from 'pages/pixel/gaussian-blur/01';
-import Mosaic01 from 'pages/pixel/mosaic/01';
-import GlobalAlpha from 'pages/pixel/global/alpha';
-import GlobalCompositeOperation from 'pages/pixel/global/composite-operation';
+const Pixel = () => import('pages/pixel/index');
+const Invert01 = () => import('pages/pixel/invert/01');
+const Average01 = () => import('pages/pixel/average/01');
+const Brightness01 = () => import('pages/pixel/brightness/01');
+const Sepia01 = () => import('pages/pixel/sepia/01');
+const Mask01 = () => import('pages/pixel/mask/01');
+const Alpha01 = () => import('pages/pixel/alpha/01');
+const GaussianBlur01 = () => import('pages/pixel/gaussian-blur/01');
+const Mosaic01 = () => import('pages/pixel/mosaic/01');
+const GlobalAlpha = () => import('pages/pixel/global/alpha');
+const GlobalCompositeOperation = () => import('pages/pixel/global/composite-operation');
 
-import Gradient from 'pages/gradient/index';
-import LinearGradient01 from 'pages/gradient/linear/01';
-import LinearGradient02 from 'pages/gradient/linear/02';
-import LinearGradient03 from 'pages/gradient/linear/03';
-import RadialGradient01 from 'pages/gradient/radial/01';
-import RadialGradient02 from 'pages/gradient/radial/02';
+const Gradient = () => import('pages/gradient/index');
+const LinearGradient01 = () => import('pages/gradient/linear/01');
+const LinearGradient02 = () => import('pages/gradient/linear/02');
+const LinearGradient03 = () => import('pages/gradient/linear/03');
+const RadialGradient01 = () => import('pages/gradient/radial/01');
+const RadialGradient02 = () => import('pages/gradient/radial/02');
 
-import Shadow from 'pages/shadow/index';
-import Shadow01 from 'pages/shadow/01';
+const Shadow = () => import('pages/shadow/index');
+const Shadow01 = () => import('pages/shadow/01');
 
-import Pattern from 'pages/pattern/index';
-import Pattern01 from 'pages/pattern/01';
-import Pattern02 from 'pages/pattern/02';
+const Pattern = () => import('pages/pattern/index');
+const Pattern01 = () => import('pages/pattern/01');
+const Pattern02 = () => import('pages/pattern/02');
 
-import Transform from 'pages/transform/index';
-import Translate01 from 'pages/transform/translate/01';
-import Scale01 from 'pages/transform/scale/01';
-import Scale02 from 'pages/transform/scale/02';
-import Rotate01 from 'pages/transform/rotate/01';
-import Rotate02 from 'pages/transform/rotate/02';
+const Transform = () => import('pages/transform/index');
+const Translate01 = () => import('pages/transform/translate/01');
+const Scale01 = () => import('pages/transform/scale/01');
+const Scale02 = () => import('pages/transform/scale/02');
+const Rotate01 = () => import('pages/transform/rotate/01');
+const Rotate02 = () => import('pages/transform/rotate/02');
 
-import Animation from 'pages/animation/index';
-import ColorAnimation from 'pages/animation/color';
-import CountDownAnimation from 'pages/animation/countdown';
+const Animation = () => import('pages/animation/index');
+const ColorAnimation = () => import('pages/animation/color');
+const CountDownAnimation = () => import('pages/animation/countdown');
 
-import Events from 'pages/events/index';
-import Mouse01 from 'pages/events/mouse/01';
+const Events = () => import('pages/events/index');
+const Mouse01 = () => import('pages/events/mouse/01');
 
-import Instances from 'pages/instances/index';
-import Tangram from 'pages/instances/tangram';
-import Palette from 'pages/instances/palette';
-import Magnifier from 'pages/instances/magnifier';
+const Instances = () => import('pages/instances/index');
+const Tangram = () => import('pages/instances/tangram');
+const Palette = () => import('pages/instances/palette');
+const Magnifier = () => import('pages/instances/magnifier');
 
 export default [
     { path: '/', redirect: '/text/fill-text/01' },
