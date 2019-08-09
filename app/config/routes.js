@@ -94,6 +94,7 @@ const Mouse01 = () => import('pages/events/mouse/01');
 
 const Instances = () => import('pages/instances/index');
 const Tangram = () => import('pages/instances/tangram');
+const Wind = () => import('pages/instances/wind');
 const Palette = () => import('pages/instances/palette');
 const Magnifier = () => import('pages/instances/magnifier');
 
@@ -190,6 +191,7 @@ export default [
 
     { path: '/instances', component: Instances },
     { path: '/instances/tangram', component: Tangram },
+    { path: '/instances/wind', component: Wind },
     { path: '/instances/palette', component: Palette },
     { path: '/instances/magnifier', component: Magnifier },
 

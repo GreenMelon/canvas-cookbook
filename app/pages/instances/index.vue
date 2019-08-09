@@ -31,6 +31,9 @@
                             {
                                 name: '放大镜',
                                 route: '/instances/magnifier'
+                            },{
+                                name: 'wind',
+                                route: '/instances/wind'
                             }
                         ]
                     }
