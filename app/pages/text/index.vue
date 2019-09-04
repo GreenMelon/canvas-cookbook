@@ -1,63 +1,66 @@
 <template>
     <main>
-        <categories :categories="categories"></categories>
+        <categories
+            :base-route="baseRoute"
+            :categories="categories"
+        />
     </main>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                categories: [
-                    {
-                        name: '描边文本',
-                        instances: [
-                            {
-                                name: '01',
-                                route: '/text/stroke-text/01'
-                            }
-                        ],
-                    },{
-                        name: '填充文本',
-                        instances: [
-                            {
-                                name: '01',
-                                route: '/text/fill-text/01'
-                            },{
-                                name: '02',
-                                route: '/text/fill-text/02'
-                            }
-                        ],
-                    },{
-                        name: '获取文本宽度',
-                        instances: [
-                            {
-                                name: '01',
-                                route: '/text/measure-text/01'
-                            },{
-                                name: '水平居中',
-                                route: '/text/measure-text/02'
-                            }
-                        ],
-                    },{
-                        name: '水平对齐',
-                        instances: [
-                            {
-                                name: '01',
-                                route: '/text/text-align/01'
-                            }
-                        ],
-                    },{
-                        name: '垂直对齐',
-                        instances: [
-                            {
-                                name: '01',
-                                route: '/text/text-base-line/01'
-                            }
-                        ],
-                    }
-                ],
-            }
+export default {
+    data() {
+        return {
+            baseRoute: '/text',
+            categories: [
+                {
+                    name: 'stroke-text',
+                    alias: '描边文本',
+                    children: [
+                        {
+                            route: '01',
+                        },
+                    ],
+                }, {
+                    name: 'fill-text',
+                    alias: '填充文本',
+                    children: [
+                        {
+                            route: '01',
+                        }, {
+                            route: '02',
+                        },
+                    ],
+                }, {
+                    name: 'measure-text',
+                    alias: '获取文本宽度',
+                    children: [
+                        {
+                            route: '01',
+                        }, {
+                            alias: '水平居中',
+                            route: '02',
+                        },
+                    ],
+                }, {
+                    name: 'text-align',
+                    alias: '水平对齐',
+                    children: [
+                        {
+                            route: '01',
+                        },
+                    ],
+                }, {
+                    name: 'text-base-line',
+                    alias: '垂直对齐',
+                    children: [
+                        {
+                            route: '01',
+                        },
+                    ],
+                },
+            ],
         }
-    }
+    },
+}
 </script>

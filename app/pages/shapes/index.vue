@@ -1,124 +1,127 @@
 <template>
     <main>
-        <categories :categories="categories"></categories>
+        <categories
+            :base-route="baseRoute"
+            :categories="categories"
+        />
     </main>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                categories: [
-                    {
-                        name: '直线',
-                        instances: [
-                            {
-                                name: '基础',
-                                route: '/shapes/line/01'
-                            }
-                        ]
-                    },{
-                        name: '三角形',
-                        instances: [
-                            {
-                                name: '基础',
-                                route: '/shapes/triangle/01'
-                            }
-                        ]
-                    },{
-                        name: '矩形',
-                        instances: [
-                            {
-                                name: '空心矩形',
-                                route: '/shapes/rectangle/01'
-                            },{
-                                name: '实心矩形',
-                                route: '/shapes/rectangle/02'
-                            },{
-                                name: '清除矩形',
-                                route: '/shapes/rectangle/03'
-                            },{
-                                name: '圆角矩形',
-                                route: '/shapes/rectangle/04'
-                            }
-                        ]
-                    },{
-                        name: '多边形',
-                        instances: [
-                            {
-                                name: '01',
-                                route: '/shapes/polygon/01'
-                            }
-                        ]
-                    },{
-                        name: '弧线',
-                        instances: [
-                            {
-                                name: 'arc',
-                                route: '/shapes/arc/01'
-                            },{
-                                name: 'arcTo',
-                                route: '/shapes/arcTo/01'
-                            }
-                        ]
-                    },{
-                        name: '圆',
-                        instances: [
-                            {
-                                name: '基础',
-                                route: '/shapes/circle/01'
-                            },{
-                                name: '标靶',
-                                route: '/shapes/circle/02'
-                            }
-                        ]
-                    },{
-                        name: '二次贝塞尔曲线',
-                        instances: [
-                            {
-                                name: '01',
-                                route: '/shapes/quadratic-curve-to/01'
-                            }
-                        ]
-                    },{
-                        name: '三次贝塞尔曲线',
-                        instances: [
-                            {
-                                name: '01',
-                                route: '/shapes/bezier-curve-to/01'
-                            }
-                        ]
-                    },{
-                        name: '笔触',
-                        instances: [
-                            {
-                                name: 'line-width',
-                                route: '/shapes/stroke/line-width'
-                            },{
-                                name: 'line-join',
-                                route: '/shapes/stroke/line-join'
-                            },{
-                                name: 'line-cap',
-                                route: '/shapes/stroke/line-cap'
-                            },{
-                                name: 'Z',
-                                route: '/shapes/stroke/line-join-02'
-                            },{
-                                name: '线条虚实',
-                                route: '/shapes/stroke/set-line-dash'
-                            },
-                        ]
-                    },{
-                        name: '填充',
-                        instances: [
-                            {
-                                name: '01',
-                                route: '/shapes/fill/01'
-                            }
-                        ]
-                    }
-                ],
-            }
+export default {
+    data() {
+        return {
+            baseRoute: '/shapes',
+            categories: [
+                {
+                    name: 'line',
+                    alias: '直线',
+                    children: [
+                        {
+                            route: '01',
+                        },
+                    ],
+                }, {
+                    name: 'triangle',
+                    alias: '三角形',
+                    children: [
+                        {
+                            route: '01',
+                        },
+                    ],
+                }, {
+                    name: 'rectangle',
+                    alias: '矩形',
+                    children: [
+                        {
+                            alias: '空心矩形',
+                            route: '01',
+                        }, {
+                            alias: '实心矩形',
+                            route: '02',
+                        }, {
+                            alias: '清除矩形',
+                            route: '03',
+                        }, {
+                            alias: '圆角矩形',
+                            route: '04',
+                        },
+                    ],
+                }, {
+                    name: 'polygon',
+                    alias: '多边形',
+                    children: [
+                        {
+                            route: '01',
+                        },
+                    ],
+                }, {
+                    alias: '弧线',
+                    children: [
+                        {
+                            alias: 'arc',
+                            route: 'arc/01',
+                        }, {
+                            alias: 'arcTo',
+                            route: 'arcTo/01',
+                        },
+                    ],
+                }, {
+                    name: 'circle',
+                    alias: '圆',
+                    children: [
+                        {
+                            route: '01',
+                        }, {
+                            alias: '标靶',
+                            route: '02',
+                        },
+                    ],
+                }, {
+                    name: 'quadratic-curve-to',
+                    alias: '二次贝塞尔曲线',
+                    children: [
+                        {
+                            route: '01',
+                        },
+                    ],
+                }, {
+                    name: 'bezier-curve-to',
+                    alias: '三次贝塞尔曲线',
+                    children: [
+                        {
+                            route: '01',
+                        },
+                    ],
+                }, {
+                    name: 'stroke',
+                    alias: '笔触',
+                    children: [
+                        {
+                            route: 'line-width',
+                        }, {
+                            route: 'line-join',
+                        }, {
+                            route: 'line-cap',
+                        }, {
+                            alias: 'Z',
+                            route: 'line-join-02',
+                        }, {
+                            alias: '线条虚实',
+                            route: 'set-line-dash',
+                        },
+                    ],
+                }, {
+                    name: 'fill',
+                    alias: '填充',
+                    children: [
+                        {
+                            route: '01',
+                        },
+                    ],
+                },
+            ],
         }
-    }
+    },
+}
 </script>

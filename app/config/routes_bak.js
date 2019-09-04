@@ -39,7 +39,7 @@ let routes = [
     {
         path: '/',
         redirect: '/index'
-    },{
+    }, {
         path: '/index',
         component: Index
     }
