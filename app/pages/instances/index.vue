@@ -1,44 +1,47 @@
 <template>
     <main>
-        <categories :categories="categories"></categories>
+        <categories
+            :base-route="baseRoute"
+            :categories="categories"
+        />
     </main>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                categories: [
-                    {
-                        name: '基本图形',
-                        instances: [
-                            {
-                                name: '七巧板',
-                                route: '/instances/tangram'
-                            }
-                        ]
-                    },{
-                        name: '调色板',
-                        instances: [
-                            {
-                                name: '调色板',
-                                route: '/instances/palette'
-                            }
-                        ]
-                    },{
-                        name: '其他',
-                        instances: [
-                            {
-                                name: '放大镜',
-                                route: '/instances/magnifier'
-                            },{
-                                name: 'wind',
-                                route: '/instances/wind'
-                            }
-                        ]
-                    }
-                ]
-            }
+export default {
+    data() {
+        return {
+            baseRoute: '/instances',
+            categories: [
+                {
+                    alias: '基本图形',
+                    children: [
+                        {
+                            alias: '七巧板',
+                            route: 'tangram',
+                        },
+                    ],
+                }, {
+                    alias: '调色板',
+                    children: [
+                        {
+                            alias: '调色板',
+                            route: 'palette',
+                        },
+                    ],
+                }, {
+                    alias: '其他',
+                    children: [
+                        {
+                            alias: '放大镜',
+                            route: 'magnifier',
+                        }, {
+                            route: 'wind',
+                        },
+                    ],
+                },
+            ],
         }
-    }
+    },
+}
 </script>

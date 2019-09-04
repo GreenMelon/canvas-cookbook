@@ -1,42 +1,45 @@
 <template>
     <main>
-        <categories :categories="categories"></categories>
+        <categories
+            :base-route="baseRoute"
+            :categories="categories"
+        />
     </main>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                categories: [
-                    {
-                        name: '线性渐变',
-                        instances: [
-                            {
-                                name: '01',
-                                route: '/gradient/linear/01'
-                            },{
-                                name: '渐变圆环',
-                                route: '/gradient/linear/02'
-                            },{
-                                name: '非对称的渐变圆环',
-                                route: '/gradient/linear/03'
-                            }
-                        ]
-                    },{
-                        name: '径向渐变',
-                        instances: [
-                            {
-                                name: '01',
-                                route: '/gradient/radial/01'
-                            },{
-                                name: '02',
-                                route: '/gradient/radial/02'
-                            }
-                        ]
-                    }
-                ]
-            }
+export default {
+    data() {
+        return {
+            baseRoute: '/gradient',
+            categories: [
+                {
+                    name: 'linear',
+                    alias: '线性渐变',
+                    children: [
+                        {
+                            route: '01',
+                        }, {
+                            alias: '渐变圆环',
+                            route: '02',
+                        }, {
+                            alias: '非对称的渐变圆环',
+                            route: '03',
+                        },
+                    ]
+                }, {
+                    name: 'radial',
+                    alias: '径向渐变',
+                    children: [
+                        {
+                            route: '01',
+                        }, {
+                            route: '02',
+                        },
+                    ],
+                },
+            ],
         }
-    }
+    },
+}
 </script>

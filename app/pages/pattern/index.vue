@@ -1,28 +1,32 @@
 <template>
     <main>
-        <categories :categories="categories"></categories>
+        <categories
+            :base-route="baseRoute"
+            :categories="categories"
+        />
     </main>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                categories: [
-                    {
-                        name: '图章',
-                        instances: [
-                            {
-                                name: '图片平铺',
-                                route: '/pattern/01'
-                            },{
-                                name: '文字平铺?',
-                                route: '/pattern/02'
-                            }
-                        ]
-                    }
-                ]
-            }
+export default {
+    data() {
+        return {
+            baseRoute: '/pattern',
+            categories: [
+                {
+                    alias: '图章',
+                    children: [
+                        {
+                            alias: '图片平铺',
+                            route: '01',
+                        }, {
+                            alias: '文字平铺?',
+                            route: '02',
+                        },
+                    ],
+                },
+            ],
         }
-    }
+    },
+}
 </script>
