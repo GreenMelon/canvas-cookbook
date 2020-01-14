@@ -36,6 +36,7 @@ const StrokeText01 = () => import('pages/text/stroke-text/01');
 const FillText01 = () => import('pages/text/fill-text/01');
 const FillText02 = () => import('pages/text/fill-text/02');
 const FillText03 = () => import('pages/text/fill-text/03');
+const FillText04 = () => import('pages/text/fill-text/04');
 const MeasureText01 = () => import('pages/text/measure-text/01');
 const MeasureText02 = () => import('pages/text/measure-text/02');
 const TextAlign01 = () => import('pages/text/text-align/01');
@@ -99,6 +100,9 @@ const Wind = () => import('pages/instances/wind');
 const Palette = () => import('pages/instances/palette');
 const Magnifier = () => import('pages/instances/magnifier');
 
+const Plugins = () => import('pages/plugins/index');
+const DomToImage01 = () => import('pages/plugins/dom-to-image/01');
+
 export default [
     { path: '/', redirect: '/text/fill-text/01' },
     { path: '/index', component: Index },
@@ -134,6 +138,7 @@ export default [
     { path: '/text/fill-text/01', component: FillText01 },
     { path: '/text/fill-text/02', component: FillText02 },
     { path: '/text/fill-text/03', component: FillText03 },
+    { path: '/text/fill-text/04', component: FillText04 },
     { path: '/text/measure-text/01', component: MeasureText01 },
     { path: '/text/measure-text/02', component: MeasureText02 },
     { path: '/text/text-align/01', component: TextAlign01 },
@@ -196,6 +201,9 @@ export default [
     { path: '/instances/wind', component: Wind },
     { path: '/instances/palette', component: Palette },
     { path: '/instances/magnifier', component: Magnifier },
+
+    { path: '/plugins', component: Plugins },
+    { path: '/plugins/dom-to-image/01', component: DomToImage01 },
 
     { path: '*', component: NotFound }
 ];

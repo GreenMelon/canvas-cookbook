@@ -29,6 +29,7 @@
                     { route: '/animation', name: '动画' },
                     { route: '/events', name: '事件' },
                     { route: '/instances', name: '实例' },
+                    { route: '/plugins', name: '插件' },
                 ],
             }
         }

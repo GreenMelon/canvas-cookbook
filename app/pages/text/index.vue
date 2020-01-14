@@ -31,6 +31,10 @@ export default {
                             route: '02',
                         }, {
                             route: '03',
+                            alias: '解决高清屏下绘制文字模糊',
+                        }, {
+                            route: '04',
+                            alias: '解决高清屏下绘制文字模糊',
                         },
                     ],
                 }, {
