@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import Utils from '@/utils/index';
+    import { getRandomColor } from '@/utils/index';
     export default {
         data() {
             return {
@@ -35,7 +35,7 @@
 
                 context.beginPath();
                 context.arc(50, 550, 50, 0, 360 * Math.PI / 180);
-                context.fillStyle = Utils.getRandomColor();
+                context.fillStyle = getRandomColor();
                 context.fill();
             },
         },

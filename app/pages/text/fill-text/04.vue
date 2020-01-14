@@ -4,9 +4,7 @@
             export
         </button>
 
-        <canvas
-            id="canvas"
-        />
+        <canvas id="canvas"></canvas>
 
         <h1
             :style="{
@@ -19,21 +17,21 @@
 </template>
 
 <script>
+import { getPixelRatio } from '@/utils/index';
+
 export default {
     data() {
         return {
             canvas: null,
-            width: 400,
+            width: 600,
             height: 200,
-            zoom: 2,
-            content: 'Can',
-            fontSize: 200,
+            content: 'Caigua 菜瓜',
+            fontSize: 50,
             fontFamily: 'sans-serif',
         };
     },
 
     mounted() {
-        this.zoom = window.devicePixelRatio;
         this.draw();
     },
 
@@ -42,24 +40,30 @@ export default {
             const canvas = document.getElementById('canvas');
             const context = canvas.getContext('2d');
 
+            const ratio = getPixelRatio(context);
             const {
                 width,
                 height,
-                zoom,
                 content,
                 fontSize,
                 fontFamily,
             } = this;
 
-            canvas.width = zoom * width;
-            canvas.height = zoom * height;
+            canvas.width = ratio * width;
+            canvas.height = ratio * height;
+
+            canvas.style.width = `${width}px`;
+            canvas.style.height = `${height}px`;
+
+            // resize
+            context.scale(ratio, ratio);
 
             context.fillStyle = '#fff';
-            context.fillRect(0, 0, zoom * width, zoom * height);
+            context.fillRect(0, 0, ratio * width, ratio * height);
 
             context.fillStyle = '#000';
-            context.font = `${zoom * fontSize}px ${fontFamily}`;
-            context.fillText(content, 10, 150 * zoom);
+            context.font = `${fontSize}px ${fontFamily}`;
+            context.fillText(content, 10, 50 * ratio);
 
             this.canvas = canvas;
         },
