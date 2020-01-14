@@ -99,6 +99,9 @@ const Wind = () => import('pages/instances/wind');
 const Palette = () => import('pages/instances/palette');
 const Magnifier = () => import('pages/instances/magnifier');
 
+const Plugins = () => import('pages/plugins/index');
+const DomToImage01 = () => import('pages/plugins/dom-to-image/01');
+
 export default [
     { path: '/', redirect: '/text/fill-text/01' },
     { path: '/index', component: Index },
@@ -196,6 +199,9 @@ export default [
     { path: '/instances/wind', component: Wind },
     { path: '/instances/palette', component: Palette },
     { path: '/instances/magnifier', component: Magnifier },
+
+    { path: '/plugins', component: Plugins },
+    { path: '/plugins/dom-to-image/01', component: DomToImage01 },
 
     { path: '*', component: NotFound }
 ];
