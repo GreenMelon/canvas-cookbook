@@ -35,6 +35,7 @@ const Text = () => import('pages/text/index');
 const StrokeText01 = () => import('pages/text/stroke-text/01');
 const FillText01 = () => import('pages/text/fill-text/01');
 const FillText02 = () => import('pages/text/fill-text/02');
+const FillText03 = () => import('pages/text/fill-text/03');
 const MeasureText01 = () => import('pages/text/measure-text/01');
 const MeasureText02 = () => import('pages/text/measure-text/02');
 const TextAlign01 = () => import('pages/text/text-align/01');
@@ -132,6 +133,7 @@ export default [
     { path: '/text/stroke-text/01', component: StrokeText01 },
     { path: '/text/fill-text/01', component: FillText01 },
     { path: '/text/fill-text/02', component: FillText02 },
+    { path: '/text/fill-text/03', component: FillText03 },
     { path: '/text/measure-text/01', component: MeasureText01 },
     { path: '/text/measure-text/02', component: MeasureText02 },
     { path: '/text/text-align/01', component: TextAlign01 },
