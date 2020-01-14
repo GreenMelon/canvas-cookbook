@@ -29,6 +29,8 @@ export default {
                             route: '01',
                         }, {
                             route: '02',
+                        }, {
+                            route: '03',
                         },
                     ],
                 }, {
