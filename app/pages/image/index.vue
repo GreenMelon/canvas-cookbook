@@ -65,6 +65,13 @@ export default {
                             route: 'height-limit',
                         },
                     ],
+                }, {
+                    name: 'video',
+                    children: [
+                        {
+                            route: '01',
+                        },
+                    ],
                 }
             ],
         }

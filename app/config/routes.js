@@ -53,6 +53,7 @@ const ClipImage01 = () => import('pages/image/clip/01');
 const MergeImage01 = () => import('pages/image/merge/01');
 const HeightLimit = () => import('pages/image/export/height-limit');
 const ToDataURL = () => import('pages/image/export/to-data-url');
+const Video01 = () => import('pages/image/video/01');
 
 const Pixel = () => import('pages/pixel/index');
 const Invert01 = () => import('pages/pixel/invert/01');
@@ -155,6 +156,7 @@ export default [
     { path: '/image/merge/01', component: MergeImage01 },
     { path: '/image/export/height-limit', component: HeightLimit },
     { path: '/image/export/to-data-url', component: ToDataURL },
+    { path: '/image/video/01', component: Video01 },
 
     { path: '/pixel', component: Pixel },
     { path: '/pixel/invert/01', component: Invert01 },
