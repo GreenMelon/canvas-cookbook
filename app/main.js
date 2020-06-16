@@ -1,31 +1,20 @@
-/**
- * 主入口文件,引入
- * - vue
- * - vue-router
- * - app.vue 入口组件
- * - routes 路由配置
- *
- */
-
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import App from './app.vue';
-import routes from './config/routes';
+// import routes from './config/routes'; // 手动注入路由
+import routes from './config/routes.util'; // 自动生成路由
 
 Vue.use(VueRouter);
-
-// 开启 debug 模式
 Vue.config.debug = true;
 
 const router = new VueRouter({
-    routes: routes
+    routes,
 });
 
 const app = new Vue({
     el: '#app',
     template: '<App/>',
     components: { App },
-    router
+    router,
 });
-
