@@ -1,28 +1,14 @@
-<template>
-    <main>
-        <categories
-            :base-route="baseRoute"
-            :categories="categories"
-        />
-    </main>
-</template>
-
 <script>
-export default {
+import Vue from 'vue';
+import Catalogue from '@/components/catalogue';
+
+export default Vue.extend({
+    mixins: [Catalogue],
+
     data() {
         return {
-            baseRoute: '/plugins',
-            categories: [
-                {
-                    name: 'dom-to-image',
-                    children: [
-                        {
-                            route: '01',
-                        },
-                    ],
-                }
-            ],
-        }
+            dir: 'plugins',
+        };
     },
-}
+});
 </script>

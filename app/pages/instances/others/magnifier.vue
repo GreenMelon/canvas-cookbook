@@ -5,8 +5,6 @@
 </template>
 
 <script>
-    export default {
-        methods: {},
-        mounted() {},
-    }
+// 放大镜
+export default {}
 </script>
