@@ -19,6 +19,7 @@
 </template>
 
 <script>
+// 解决高清屏下绘制文字模糊
 export default {
     data() {
         return {

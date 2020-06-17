@@ -1,32 +1,14 @@
-<template>
-    <main>
-        <categories
-            :base-route="baseRoute"
-            :categories="categories"
-        />
-    </main>
-</template>
-
 <script>
-export default {
+import Vue from 'vue';
+import Catalogue from '@/components/catalogue';
+
+export default Vue.extend({
+    mixins: [Catalogue],
+
     data() {
         return {
-            baseRoute: '/animation',
-            categories: [
-                {
-                    alias: '实例',
-                    children: [
-                        {
-                            alias: '颜色动画',
-                            route: 'color',
-                        }, {
-                            alias: '倒计时',
-                            route: 'countdown',
-                        },
-                    ],
-                },
-            ],
-        }
+            dir: 'animation',
+        };
     },
-}
+});
 </script>

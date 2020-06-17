@@ -1,45 +1,14 @@
-<template>
-    <main>
-        <categories
-            :base-route="baseRoute"
-            :categories="categories"
-        />
-    </main>
-</template>
-
 <script>
-export default {
+import Vue from 'vue';
+import Catalogue from '@/components/catalogue';
+
+export default Vue.extend({
+    mixins: [Catalogue],
+
     data() {
         return {
-            baseRoute: '/gradient',
-            categories: [
-                {
-                    name: 'linear',
-                    alias: '线性渐变',
-                    children: [
-                        {
-                            route: '01',
-                        }, {
-                            alias: '渐变圆环',
-                            route: '02',
-                        }, {
-                            alias: '非对称的渐变圆环',
-                            route: '03',
-                        },
-                    ]
-                }, {
-                    name: 'radial',
-                    alias: '径向渐变',
-                    children: [
-                        {
-                            route: '01',
-                        }, {
-                            route: '02',
-                        },
-                    ],
-                },
-            ],
-        }
+            dir: 'gradient',
+        };
     },
-}
+});
 </script>

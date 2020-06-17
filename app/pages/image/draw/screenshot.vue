@@ -26,6 +26,7 @@
 </template>
 
 <script>
+// 视频截图
 export default {
     data() {
         return {

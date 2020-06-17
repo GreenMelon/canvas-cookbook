@@ -1,28 +1,14 @@
-<template>
-    <main>
-        <categories
-            :base-route="baseRoute"
-            :categories="categories"
-        />
-    </main>
-</template>
-
 <script>
-export default {
+import Vue from 'vue';
+import Catalogue from '@/components/catalogue';
+
+export default Vue.extend({
+    mixins: [Catalogue],
+
     data() {
         return {
-            baseRoute: '/shadow',
-            categories: [
-                {
-                    alias: '阴影',
-                    children: [
-                        {
-                            route: '01',
-                        },
-                    ],
-                }
-            ],
-        }
+            dir: 'shadow',
+        };
     },
-}
+});
 </script>
