@@ -24,13 +24,12 @@ export default {
 
     methods: {
         getTableOfContents(name) {
-            const files = require.context('../pages', true, /\.vue$/);
+            const files = require.context('../../pages', true, /\.vue$/);
 
             const paths = files.keys()
                 .map(i => i.replace(/(\.\/|\.vue)/g, ''))
                 .filter(i => i.startsWith(name))
-                .map(i => i.replace(`${name}/`, ''))
-                .filter(i => i !== 'index');
+                .map(i => i.replace(`${name}/`, ''));
 
             const { categories } = this;
 
