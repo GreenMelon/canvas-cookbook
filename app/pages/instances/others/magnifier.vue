@@ -5,6 +5,7 @@
 </template>
 
 <script>
-// 放大镜
-export default {}
+export default {
+    alias: '放大镜',
+}
 </script>

@@ -16,13 +16,19 @@
 </template>
 
 <script>
-// 非对称的渐变圆环
 export default {
+    alias: '非对称的渐变圆环',
+
     data() {
         return {
             context: null,
         }
     },
+
+    mounted() {
+        this.draw();
+    },
+
     methods: {
         draw() {
             const canvas = document.getElementById('canvas');
@@ -65,8 +71,5 @@ export default {
             });
         },
     },
-    mounted() {
-        this.draw();
-    }
 }
 </script>

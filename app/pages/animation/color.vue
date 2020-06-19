@@ -11,11 +11,17 @@
 </template>
 
 <script>
-// 颜色动画
 export default {
+    alias: '颜色动画',
+
     data() {
         return {}
     },
+
+    mounted() {
+        this.init();
+    },
+
     methods: {
         init() {
             const canvas = document.getElementById('canvas');
@@ -56,9 +62,6 @@ export default {
             };
             draw();
         },
-    },
-    mounted() {
-        this.init();
     },
 }
 </script>

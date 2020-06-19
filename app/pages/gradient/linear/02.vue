@@ -8,8 +8,9 @@
 </template>
 
 <script>
-// 渐变圆环
 export default {
+    alias: '对称的渐变圆环',
+
     data() {
         return {
             context: null,
@@ -18,6 +19,11 @@ export default {
             linearGrad: null,
         }
     },
+
+    mounted() {
+        this.draw();
+    },
+
     methods: {
         draw() {
             const canvas = document.getElementById('canvas');
@@ -69,8 +75,5 @@ export default {
             });
         },
     },
-    mounted() {
-        this.draw();
-    }
 }
 </script>

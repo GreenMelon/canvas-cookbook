@@ -5,8 +5,13 @@
 </template>
 
 <script>
-// 调色板
 export default {
+    alias: '调色板',
+
+    mounted() {
+        this.draw();
+    },
+
     methods: {
         draw() {
             const canvas = document.getElementById('canvas');
@@ -50,9 +55,6 @@ export default {
                 cxt.fillRect(3 * i, 300, 3, 150);
             }
         },
-    },
-    mounted() {
-        this.draw();
     },
 }
 </script>
