@@ -17,14 +17,20 @@
 </template>
 
 <script>
-// 文字平铺
 export default {
+    alias: '文字平铺',
+
     data() {
         return {
             canvas: null,
             context: null,
         }
     },
+
+    mounted() {
+        this.draw();
+    },
+
     methods: {
         draw(src) {
             try {
@@ -49,9 +55,6 @@ export default {
                 
             }
         },
-    },
-    mounted() {
-        this.draw();
     },
 };
 </script>

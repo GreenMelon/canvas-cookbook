@@ -182,9 +182,12 @@ const digit = [
 ];
 
 export default {
-    data() {
-        return {}
+    alias: '倒计时动画',
+
+    mounted() {
+        this.init();
     },
+
     methods: {
         getShowSeconds() {
             const now = new Date();
@@ -317,9 +320,6 @@ export default {
                 update();
             }, 50);
         },
-    },
-    mounted() {
-        this.init();
     },
 }
 </script>

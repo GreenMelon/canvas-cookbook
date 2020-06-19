@@ -5,8 +5,9 @@
 </template>
 
 <script>
-// 七巧板
 export default {
+    alias: '七巧板',
+
     data() {
         return {
             tangram: [
@@ -65,6 +66,11 @@ export default {
             ]
         }
     },
+
+    mounted() {
+        this.draw();
+    },
+
     methods: {
         draw() {
             const canvas = document.getElementById('canvas');
@@ -92,8 +98,5 @@ export default {
             });
         }
     },
-    mounted() {
-        this.draw();
-    }
 }
 </script>

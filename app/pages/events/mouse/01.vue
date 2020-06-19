@@ -14,27 +14,29 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                x: 0,
-                y: 0,
-            }
-        },
-        methods: {
-            init() {
-                const canvas = document.getElementById('canvas');
-
-                canvas.addEventListener('mousemove', ev => {
-                    const element = ev.target;
-
-                    this.x = ev.pageX - element.offsetLeft;
-                    this.y = ev.pageY - element.offsetTop;
-                });
-            }
-        },
-        mounted() {
-            this.init();
+export default {
+    data() {
+        return {
+            x: 0,
+            y: 0,
         }
-    }
+    },
+
+    mounted() {
+        this.init();
+    },
+
+    methods: {
+        init() {
+            const canvas = document.getElementById('canvas');
+
+            canvas.addEventListener('mousemove', ev => {
+                const element = ev.target;
+
+                this.x = ev.pageX - element.offsetLeft;
+                this.y = ev.pageY - element.offsetTop;
+            });
+        }
+    },
+}
 </script>
