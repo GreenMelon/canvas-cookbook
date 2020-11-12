@@ -7,9 +7,7 @@
         >
         <p>存在透明区域：{{ hasAlpha }}</p>
 
-        <canvas
-            id="canvas"
-        />
+        <canvas id="canvas" />
     </main>
 </template>
 
