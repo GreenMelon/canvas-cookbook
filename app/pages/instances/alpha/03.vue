@@ -16,8 +16,13 @@
 
         <canvas
             id="canvas"
-            width="800"
-            height="600"
+            width="200"
+            height="200"
+            @click="getImageData"
+        />
+
+        <div
+            :style="style"
         />
     </main>
 </template>
@@ -30,7 +35,18 @@ export default {
         return {
             canvas: null,
             context: null,
-        }
+            color: '',
+        };
+    },
+
+    computed: {
+        style() {
+            return {
+                width: '50px',
+                height: '50px',
+                backgroundColor: `${this.color}`,
+            }
+        },
     },
 
     mounted() {
@@ -44,6 +60,20 @@ export default {
 
             const img = document.getElementById('img');
             this.context.drawImage(img, 0, 0, 200, 200);
+        },
+
+        getImageData(evt) {
+            const { top, left } = this.canvas.getBoundingClientRect();
+            const { clientX, clientY } = evt;
+            const x = clientX - left;
+            const y = clientY - top;
+            const imageData = this.context.getImageData(x, y, 1, 1).data.slice(0, 3);
+            this.color = imageData.reduce((color, channel) => {
+                const hex = channel.toString(16).padStart(2, '0');
+                return `${color}${hex}`;
+            }, '#');
+
+            console.log(1, this.color);
         },
     },
 };
