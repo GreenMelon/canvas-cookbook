@@ -40,12 +40,6 @@
 <script>
 // https://clippingmagic.com
 
-/**
- * todo:
- *   1. canvas 取色 context.getImageData(x, y, 1, 1).data
- *      hex.toString(16)
- */
-
 const hexToRgb = (hex) => {
     const value = hex.replace('#', '').split('');
     const r = parseInt(`0x${value.slice(0, 2).join('')}`);
@@ -73,8 +67,8 @@ export default {
             range: 20,
             context: null,
             shadowContext: null,
-            data: [],
-            shadowData: [],
+            imgData: [],
+            shadowImgData: [],
         };
     },
 
@@ -99,45 +93,45 @@ export default {
         },
 
         draw(img) {
-            this.render(img, canvas, 'context', 'data');
-            this.render(img, shadowCanvas, 'shadowContext', 'shadowData');
+            this.render(img, canvas, 'context', 'imgData');
+            this.render(img, shadowCanvas, 'shadowContext', 'shadowImgData');
         },
 
-        render(img, canvas, contextData, imgData) {
+        render(img, canvas, ctx, data) {
             const { width, height } = img;
             const context = canvas.getContext('2d');
-            this[contextData] = context;
+            this[ctx] = context;
 
             canvas.width = width;
             canvas.height = height;
             context.clearRect(0, 0, width, height);
             context.drawImage(img, 0, 0);
 
-            this[imgData] = context.getImageData(0, 0, width, height);
+            this[data] = context.getImageData(0, 0, width, height);
         },
 
         clear() {
-            const { data, shadowData, shadowContext } = this;
+            const { imgData, shadowImgData, shadowContext } = this;
 
-            for (let index = 0; index < data.data.length; index += 4) {
-                let r = data.data[index];
-                let g = data.data[index + 1];
-                let b = data.data[index + 2];
+            for (let index = 0; index < imgData.data.length; index += 4) {
+                let r = imgData.data[index];
+                let g = imgData.data[index + 1];
+                let b = imgData.data[index + 2];
 
                 if (isSimilar(hexToRgb(this.color), r, g, b, this.range)) {
-                    shadowData.data[index] = 0;
-                    shadowData.data[index + 1] = 0;
-                    shadowData.data[index + 2] = 0;
-                    shadowData.data[index + 3] = 0;
+                    shadowImgData.data[index] = 0;
+                    shadowImgData.data[index + 1] = 0;
+                    shadowImgData.data[index + 2] = 0;
+                    shadowImgData.data[index + 3] = 0;
                 } else {
-                    shadowData.data[index] = r;
-                    shadowData.data[index + 1] = g;
-                    shadowData.data[index + 2] = b;
-                    shadowData.data[index + 3] = data.data[index + 3];
+                    shadowImgData.data[index] = r;
+                    shadowImgData.data[index + 1] = g;
+                    shadowImgData.data[index + 2] = b;
+                    shadowImgData.data[index + 3] = imgData.data[index + 3];
                 }
             }
 
-            shadowContext.putImageData(shadowData, 0, 0);
+            shadowContext.putImageData(shadowImgData, 0, 0);
         },
     },
 }
