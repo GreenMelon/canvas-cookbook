@@ -28,12 +28,15 @@
 <script>
 // 视频截图
 export default {
+    alias: 'screenshot',
+
     data() {
         return {
             canvas: null,
             context: null,
             video: null,
-            videoSrc: 'http://ugcws.video.gtimg.com/uwMROfz2r5zEIaQXGdGnC2dfDmafRkP9ujxgqKjuATzMrE-2/e30308fywdg.mp4?vkey=A9B8D5650EC8A2E2744878B934B4E062D01E17D532FF3C16C9BD20CF32C5B45730A57149117174D77313BE62401287B77483EF9022F9040D6E3693EDF41A3EC2528F2F91D1A98793F42F0BF85F1C9C75160962CAC728F97723436CB6E0380BDFC57688069684061686DB315B039DA8BC5F7D4AC9C4B81713DC20F0C3D32BB8EC&br=101&platform=2&fmt=auto&level=0&sdtfrom=v1010&guid=70552d96bcd5307649086b35d1536d24',
+            // videoSrc: 'https://tbm-auth.alicdn.com/e99361edd833010b/v4E116euH9qiuAZlK1v/rQQluMwLeiFMX9kXHio_290315414979_hd_hq.mp4?auth_key=1608277219-0-0-743fa07c307824b541a1198be1fb074b',
+            videoSrc: 'https://cloud.video.taobao.com/play/u/2097687348/p/1/e/6/t/1/290315414979.mp4',
             imgSrc: '',
         }
     },
