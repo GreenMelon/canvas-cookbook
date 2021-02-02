@@ -16,13 +16,14 @@
 </template>
 
 <script>
-import DomToImage from 'dom-to-image';
+// 文档: https://html2canvas.hertzen.com/configuration
+import Html2canvas from 'html2canvas';
 
 export default {
     data() {
         return {
             zoom: 0.5,
-        };
+        }
     },
 
     mounted() {
@@ -35,30 +36,24 @@ export default {
             const shot = document.getElementById('shot');
 
             const { offsetWidth, offsetHeight } = editor;
-            const scale = 2;
-            const option = {
-                width: offsetWidth * scale,
-                height: offsetHeight * scale,
-                style: {
-                    // transform: `scale(${scale}) translate(${offsetWidth / 2 / scale}px, ${offsetHeight / 2 / scale}px)`,
-                    transform: `scale(${scale})`,
-                    transformOrigin: '0 0',
-                },
-            };
 
-            DomToImage.toPng(editor, option)
-                .then((dataUrl) => {
-                    const img = new Image();
-                    img.src = dataUrl;
-                    img.width = offsetWidth;
-                    shot.appendChild(img);
-                })
-                .catch((error) => {
-                    console.error('oops, something went wrong!', error);
-                });
+            Html2canvas(editor, {
+                width: offsetWidth,
+                height: offsetHeight,
+                useCORS: true,
+                onclone: (document) => {
+                    // eg. hide some elements
+                },
+            })
+            .then(canvas => {
+                const imageData = canvas.toDataURL('image/png');
+                const img = new Image();
+                img.src = imageData;
+                shot.appendChild(img);
+            });
         },
     },
-}
+};
 </script>
 
 <style scoped>
