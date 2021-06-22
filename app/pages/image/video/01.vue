@@ -1,52 +1,71 @@
-<style scoped>
-</style>
-
 <template>
     <main>
+        <video
+            id="video"
+            :src="videoSrc"
+            width="400"
+            crossorigin="anonymous"
+            controls
+        />
+
+        <button
+            @click="draw">截图
+        </button>
+
+        <canvas
+            id="canvas"
+            width="400"
+            height="300"
+        />
+
+        <img
+            :src="imgSrc"
+            alt=""
+        >
     </main>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                video: null,
-                canvas: null,
-                context: null,
-            }
+export default {
+    alias: '视频截图',
+
+    data() {
+        return {
+            canvas: null,
+            context: null,
+            video: null,
+            videoSrc: 'https://cloud.video.taobao.com/play/u/2097687348/p/1/e/6/t/1/290315414979.mp4',
+            imgSrc: '',
+        }
+    },
+
+    mounted() {
+        this.init();
+    },
+
+    methods: {
+        init() {
+            this.video = document.getElementById('video');
+            this.canvas = document.getElementById('canvas');
+            this.context = this.canvas.getContext('2d');
         },
 
-        mounted() {
-            this.playVideo();
+        draw() {
+            const {
+                canvas,
+                context,
+                video,
+                video: {
+                    clientWidth,
+                    clientHeight,
+                },
+            } = this;
+
+            canvas.width = clientWidth;
+            canvas.height = clientHeight;
+            context.drawImage(video, 0, 0, clientWidth, clientHeight);
+            this.imgSrc = this.canvas.toDataURL('image/png');
         },
-
-        methods: {
-            playVideo() {
-                let video;
-                if (!this.video) {
-                    video = this.video = document.createElement('video');
-                    video.src = 'http://ssl.cdn.turner.com/nba/big/video/2020/03/03/dca777ca-ee2b-4c7c-b73f-d96907ecedd7.nba_3117627_1920x1080_5904.mp4';
-                    video.loop = true;
-                    video.muted = true;
-                    video.addEventListener('playing', this.paintVideo);
-                    video.play();
-                }
-            },
-
-            paintVideo() {
-                const { video } = this;
-                if (!this.canvas) {
-                    this.canvas = document.createElement('canvas');
-                    this.canvas.width = video.videoWidth;
-                    this.canvas.height = video.videoHeight;
-                    this.$el.appendChild(this.canvas);
-                }
-
-                this.canvas.getContext('2d').drawImage(video, 0, 0, this.canvas.width, this.canvas.height);
-                if (!video.paused) {
-                    requestAnimationFrame(this.paintVideo);
-                }
-            },
-        },
-    };
+    },
+};
 </script>
