@@ -9,8 +9,8 @@
 </template>
 
 <script>
-// 绘制页面上的图片
 export default {
+    alias: '绘制页面上的图片',
     data() {
         return {
             canvas: null,
